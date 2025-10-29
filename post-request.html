@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Khedma4student</title>
+</head>
+<body>
+    <header class="header1">
+        <div class="logo">
+            <img src="media/logo.png" alt="logo" class="img">
+        </div>
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="nav1">
+            <div class="nav">
+                <a href="home.html" class="active"><b>Home</b></a>
+                <a href="jobs.html" class="hov"><b>Jobs</b></a>
+                <a href="student.html" class="hov"><b>Student Services</b></a>
+                <a href="rating.html" class="hov"><b>Ratings</b></a>
+                <a href="contact.html" class="hov"><b>Contact Us</b></a>
+            </div>
+            <div class="line"></div>
+            <div class="buttons">
+                <a href="login.html" class="hov"><b>Login</b></a>
+                <a class="hov" href="sign.html"><b>Sign Up</b></a>
+            </div>
+        </nav>
+    </header>
+    <a href="index.html" class="go-back-home"> &larr; Go back Home</a>
+    <section class="req">
+       <h2>Post a Job Request</h2>
+       <p>Students: Let employers know what kind of jobs you want to apply for</p>
+       <div class="post-request">
+         <form action=""  class="request-form">
+             <label for="">Job title / What i'm looking for:</label><br>
+             <input type="text" placeholder="e.g., Looking for part-time tutoring job in Math" required>
+             <br><br>
+             <label for="">Category</label><br>
+             <select id="" name="" required >
+                 <option value="">-- select a category -- </option>
+                 <option value="">Tutoring & education </option>
+                 <option value="">Freelance & degital work</option>
+                 <option value="">Part time & small jobs </option>
+                 <option value="">Babysitting & Household Help</option>
+                 <option value="">Delivery and Errands</option>
+              </select> 
+              <br><br>
+
+              <label for="">Preferred Location </label><br>
+              <select name="" id="" required>
+                 <option value=""> -- select a city --</option>
+                 <option value="Adrar">Adrar</option>
+                 <ption value="Chlef">Chlef</option>
+                 <option value="Laghouat">Laghouat</option>
+                 <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                 <option value="Batna">Batna</option>
+                 <option value="Béjaïa">Béjaïa</option>     
+                 <option value="Biskra">Biskra</option>  
+                 <option value="Béchar">Béchar</option>      
+                 <option value="Blida">Blida</option>
+                 <option value="Bouira">Bouira</option>
+                 <option value="Tamanrasset">Tamanrasset</option>
+                 <option value="Tébessa">Tébessa</option>
+                 <option value="Tlemcen">Tlemcen</option>
+                 <option value="Tiaret">Tiaret</option>
+                 <option value="Tizi Ouzou">Tizi Ouzou</option>
+                 <option value="Algiers">Algiers</option>
+                 <option value="Djelfa">Djelfa</option>
+                 <option value="Jijel">Jijel</option>
+                 <option value="Sétif">Sétif</option>
+                 <option value="Saïda">Saïda</option>
+                 <option value="Skikda">Skikda</option>
+                 <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                 <option value="Annaba">Annaba</option>
+                 <option value="Guelma">Guelma</option>
+                 <option value="Constantine">Constantine</option>
+                 <option value="Médéa">Médéa</option>
+                 <option value="Mostaganem">Mostaganem</option>
+                 <option value="M’Sila">M’Sila</option>
+                 <option value="Mascara">Mascara</option>
+                 <option value="Ouargla">Ouargla</option>
+                 <option value="Oran">Oran</option>
+                 <option value="El Bayadh">El Bayadh</option>
+                 <option value="Illizi">Illizi</option>
+                 <option value="Bordj Bou Arréridj">Bordj Bou Arréridj</option>
+                 <option value="Boumerdès">Boumerdès</option>
+                 <option value="El Tarf">El Tarf</option>
+                 <option value="Tindouf">Tindouf</option>
+                 <option value="Tissemsilt">Tissemsilt</option>
+                 <option value="El Oued">El Oued</option>
+                 <option value="Khenchela">Khenchela</option>
+                 <option value="Souk Ahras">Souk Ahras</option>
+                 <option value="Tipaza">Tipaza</option>
+                 <option value="Mila">Mila</option>
+                 <option value="Aïn Defla">Aïn Defla</option>
+                 <option value="Naama">Naama</option>
+                 <option value="Aïn Témouchent">Aïn Témouchent</option>
+                 <option value="Ghardaïa">Ghardaïa</option>
+                 <option value="Relizane">Relizane</option>
+                 <option value="Timimoun">Timimoun</option>
+                 <option value="Bordj Badji Mokhtar">Bordj Badji Mokhtar</option>
+                 <option value="Ouled Djellal">Ouled Djellal</option>
+                 <option value="Béni Abbès">Béni Abbès</option>
+                 <option value="In Salah">In Salah</option>
+                 <option value="In Guezzam">In Guezzam</option>
+                 <option value="Touggourt">Touggourt</option>
+                 <option value="El M’Ghair">El M’Ghair</option>
+                 <option value="El Menia">El Menia</option>
+                 <option value="Djanet">Djanet</option>
+               </select>
+               <br><br>
+
+               <label for="">Description</label><br>
+               <textarea name="" id="" rows="6" cols="40" placeholder="Describe your skills , experience , and what you're looking for in detail..."></textarea>
+               <p>Include your qualifications, preferred working hours, and any other relevant information</p>
+               <br><br>
+                <div class="pay-availability">
+                    <div>
+                        <label for="">Expected Pay (optional)</label><br>
+                        <input type="text" placeholder="e.g., 5000 DZD/hour">     
+                    </div>
+                    <div>
+                        <label for="">Your Availability</label><br>
+                       <input type="text" placeholder="e.g., Mon-Fri 2PM-6PM" required>
+                    </div>
+                </div>
+           </form>
+           
+
+           <div class="tips2">
+             <h4>Tips for a great job request</h4>
+             <ul>
+                 <li>Be specific about what you're looking for</li>
+                 <li>Highlight your relevant skills and experience</li>
+                 <li>Be clear about your availability</li>
+                 <li>Mention any certifications or qualifications</li>
+               </ul>
+           </div>
+
+           <input type="submit" value="Post Job Request" class="post-request-butt">
+        </div> 
+
+        <div class="How-it-works">
+            <h4>How It Works:</h4>
+            <div class="steps">
+                <div class="step">
+                    <h2> 1️⃣</h2>
+                    <h5>Post Your Request</h5>
+                    <p>Tell employers what job you're looking for</p>
+                </div>
+                <div class="step">
+                   <h2> 2️⃣</h2>
+                    <h5>Get Contacted</h5>
+                    <p>Employers will reach out if they have opportunities</p>
+                </div>
+                <div class="step">
+                   <h2> 3️⃣</h2>
+                    <h5>Start Working</h5>
+                    <p>Connect with employers and begin your job</p>
+                </div>
+            </div>
+
+        </div>
+       
+       
+    </section>
+     <footer class="footer">
+        <div class="items">
+            <div class="item1">
+                <img src="media/logo.png" alt="logo" class="imgfooter">
+                <p class="foo">Connecting Algerian students with opportunities that fit their schedules and skills.</p>
+                <div class="socials">
+                    <img class="social" src="media/facebook.png" alt="">
+                    <img class="social" src="media/twitter.png" alt="">
+                    <img class="social" src="media/instagram.png" alt="">
+                    <img class="social" src="media/linkedin.png" alt="">
+                </div>
+            </div>
+             <div class="item2">
+                <h3 style="color: white;">Quick links</h3>
+                <a class="afooter" href="index.html"><b>Home</b></a>
+                <a class="afooter" href="jobs.html"><b>Browse Jobs</b></a>
+                <a class="afooter" href="student.html"><b>Student Services</b></a>
+                <a class="afooter" href="rating.html"><b>Ratings & Reviews</b></a>
+                <a class="afooter" href="home.html"><b>Contact Us</b></a>
+            </div>
+            <div class="item3">
+                <h3 style="color: white;">Categories</h3>
+                <h4 class="h4item3">Tutoring & Education</h4>
+                <h4 class="h4item3">Freelance & Digital Work</h4>
+                <h4 class="h4item3">Part-Time & Small Jobs</h4>
+                <h4 class="h4item3">Babysitting & Household Help</h4>
+                <h4 class="h4item3">Delivery & Errands</h4>
+
+            </div>
+            <div class="item4">
+
+                <h3 style="color: white;">Contact Us</h3>
+                <div class="contact-row">
+                    <img src="media/mail.png" style="float: left;" class="social">
+                    <a class="pitem4" href="mailto:example@email.com">khedma4students@gmail.com</a>
+                </div>
+                <div class="contact-row">
+                    <img src="media/phone-call.png" class="social">
+                    <p class="pitem4">+213 797 87 65 44</p>
+                </div>
+                <div class="contact-row">
+                    <img src="media/locationk.png" style="float: left;" class="social">
+                    <p class="pitem4">Algiers , Algeria</p>
+                </div>
+                <a href="contact.html" class="btnfoo"><b>Get in touch</b></a>
+            </div>
+        </div>
+        
+        <hr class="hline">
+        <div class="underline">
+
+            <h4 class="h4last">© 2025 Khedma4Students. All rights reserved.</h5>
+                <div class="h4lastright">
+                    <h4 class="h4last">Privacy Policy</h5>
+                        <h4 class="h4last">Terms of Service</h5>
+                            <h4 class="h4last">Cookie Policy</h5>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
