@@ -1,3 +1,4 @@
+/*===========================kawtar==========================*/
 .header1 {
     display: flex;
     background-color: white;
@@ -1003,6 +1004,7 @@ body {
         padding: 5px;
       }
 }*/
+/*===================================khouloud=========================*/
 .welcome{
     background-image: url(media/background.jpg);
     margin: 0px;
@@ -1639,7 +1641,7 @@ body {
      border:#2563EB solid 1px ;
     }
 }
-/*==============mina============*/
+/*===================================mina===================================*/
 /*body {
     margin: 20px 10px;
     font-family: Arial, sans-serif;
@@ -1892,7 +1894,6 @@ body {
     gap: 20px;
   }
 }
-/*==============mina2===============*/
 /*body{
     margin: 2px;
 }*/
@@ -2480,7 +2481,7 @@ textarea {
     font-size: 14px;
   }
 }
-/*==============jb details=============*/
+/*===============================nourhene =====================================*/
 /* {
   margin: 0;
   padding: 0;
