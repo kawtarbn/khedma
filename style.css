@@ -18,6 +18,8 @@
 }
 
 
+
+
 .menu-toggle {
     display: none;
 }
@@ -35,6 +37,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-size: 16px;
   
 
 }
@@ -131,7 +134,7 @@ button {
 
 .footer {
     width: 100%;
-    height: 250px;
+    max-width: 100vw;
     background-color: #172136;
     position: relative;
     display: flex;
@@ -141,7 +144,7 @@ button {
     position: relative;
     margin-top: auto;
     z-index: 1;
-    font-size: 14px;
+
 }
 
 .foo {
@@ -158,8 +161,8 @@ button {
 .hline {
     width: 90%;
     background-color: rgb(95, 93, 93);
-    padding:1px;
-    margin: 1px;
+    padding: 1px;
+    margin: 10px;
     margin-left: 70px;
 
 }
@@ -248,7 +251,7 @@ button {
 .underline {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     
 }
@@ -257,7 +260,6 @@ body {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    display: flex;
     min-height: 100vh;
 }
 
@@ -438,23 +440,33 @@ body {
     padding: 0px;
 }
 @media screen and (max-width: 600px) {
+
+ 
   .nav1{
     display: none;
     width: 100%;
     
   }
   .footer{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 5px;
-    font-size: 20px !important;
+    font-size: 24px !important;
+    max-width: 100vw;
+    
+    
   }
+  .imgfooter{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .items{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 10px;
   
   }
   .hline{
@@ -471,13 +483,15 @@ body {
     margin-left: 0px;
   }
   .underline{
+    max-width: 100%;
     display: flex;
+     margin: 0 auto; 
     flex-direction: column;
     align-items: center;
 
   }
   .btnfoo{
-    width: 70%;
+    width: 50%;
     margin-left: 70px;
   }
   .h4last{
@@ -981,6 +995,9 @@ body {
     padding: 10px;
     text-align: left;
 
+}
+.home{
+  flex: 1;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%responsive %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%├╣├╣├╣ */
@@ -2164,17 +2181,7 @@ hr {
   }
 }
 /*==================syudent===============*/
-/*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    background: #f9f9f9;
-    color: #333;
-    margin: 40px;
-}*/
+
 .studentServices {
     max-width: 1000px;
     margin: 50px auto;
