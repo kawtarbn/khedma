@@ -1,15 +1,8 @@
 ﻿/*===========================kawtar==========================*/
 
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-family: "YourPreferredFont", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  box-sizing: border-box;
-}
-*, *::before, *::after { box-sizing: inherit; }
 
 .header1 {
-  
+
   height: 64px;               
   display: flex;
   align-items: center;
