@@ -4,31 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header1">
+   <header class="header1">
         <div class="logo">
-            <img src="media/logo.png" alt="logo" class="img">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
 
         <nav class="nav1">
-            <div class="nav">
-                <a class="ak hov"  href="index.html" ><b>Home</b></a>
-                <a class="ak hov"  href="jobs.html" class="hov"><b>Jobs</b></a>
-                <a class="ak hov"  href="student.html" class="hov"><b>Student Services</b></a>
-                <a class="ak hov"  href="rating.html" class="hov"><b>Ratings</b></a>
-                <a class="ak hov"  href="contact.html" class="hov"><b>Contact Us</b></a>
-            </div>
-            <div class="line"></div>
-            <div class="buttons">
-                <a class="ak hov"  href="login.html" ><b>Login</b></a>
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak hov" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="login.html" ><b>Login</b></a>
                 <a class="ak active"  href="sign.html"><b>Sign Up</b></a>
-            </div>
         </nav>
     </header>
     <main class="mainlogin">
@@ -36,8 +31,8 @@
         <p class="endform" style="color: rgb(20, 20, 26);">Create Account</p>
         <p class="endform" style="color:gray;">Join Khedma4Students and start your journey</p>
         <div class="empstu">
-            <a class="ak choose" href="sign.html"><b>Student</b></a>
-            <a class="ak actform" href="signemp.html"><b>Employer</b></a>
+            <a class="al choose" href="sign.html"><b>Student</b></a>
+            <a class="al actform" href="signemp.html"><b>Employer</b></a>
 
         </div>
 
@@ -45,19 +40,19 @@
 
             <form action="">
                 <p><b>Employer Sign Up</b></p><br>
-                <label for="namest">Full Name</label><br><br>
-                <input class="inputlog" type="text" id="namest" name="namest"
+                <label for="namemployer">Full Name</label><br><br>
+                <input class="inputlog" type="text" id="namemployer" name="namemployer"
                     placeholder="    Kawtar Benabdelmoumene"><br><br>
-                <label for="emailst">Email</label><br><br>
-                <input class="inputlog" type="text" id="emailst" name="emailst"
+                <label for="emailemployer">Email</label><br><br>
+                <input class="inputlog" type="text" id="emailemployer" name="emailemployer"
                     placeholder="    example@gmail.com"><br><br>
-                <label for="passst">Password</label><br><br>
-                <input class="inputlog" type="password" id="passst" name="passst"><br><br>
-                <label for="univ">Company/Organization</label><br><br>
-                <input class="inputlog" type="text" id="univ" name="univ"
+                <label for="passemployer">Password</label><br><br>
+                <input class="inputlog" type="password" id="passemployer" name="passemployer"><br><br>
+                <label for="univemp">Company/Organization</label><br><br>
+                <input class="inputlog" type="text" id="univemp" name="univemp"
                     placeholder="    University of Algiers"><br><br>
-                <label for="City">City</label><br><br>
-                <select class="inputlog" id="city" name="city">
+                <label for="Cityemp">City</label><br><br>
+                <select class="inputlog" id="cityemp" name="cityemp">
                     <option value="">-- Select your city --</option>
                     <option value="adrar">Adrar</option>
                     <option value="chlef">Chlef</option>
