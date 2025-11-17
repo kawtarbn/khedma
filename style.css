@@ -1,10 +1,12 @@
 ﻿/*===========================kawtar==========================*/
-
+.header2,.header3{
+  display: none;
+}
 
 .header1 {
-
-  height: 64px;               
+  height: 70px;               
   display: flex;
+ 
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -15,27 +17,15 @@
   z-index: 9999;
   box-shadow: 3px 3px 3px rgb(200, 198, 198);
 }
+.hamburger{
+  display: none;
+}
 
-
-body {
-  padding-top: 64px;           
+body {        
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-
-
-
-.menu-toggle {
-  display: none;
-}
-
-
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
+   padding-top: 70px !important;
 }
 
 
@@ -49,7 +39,7 @@ body {
 
 }
 
-.img {
+.imgl {
   width: 100%;
   max-width: 120px;
   height: auto;
@@ -60,28 +50,17 @@ body {
 
 .nav1 {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  margin-right: 30px;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
+  max-width:50vw;
+  width: 100%;
+  
 }
 
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 15px;
-
-
-}
-
-.ak {
-  margin: 10px;
+.ak,.al {
+ 
   text-decoration: none;
   color: rgb(70, 69, 71);
   font-family: sans-serif;
@@ -93,7 +72,7 @@ body {
   background-color: rgb(219, 218, 218);
   background-size: cover;
   width: 2px;
-  height: 40px;
+  height: 20px;
 }
 
 .hov:hover {
@@ -108,6 +87,7 @@ body {
 .login {
   padding: 10px;
   border-radius: 8px;
+  text-align: center;
 }
 
 .login:hover {
@@ -122,6 +102,7 @@ body {
   background-color: rgb(58, 114, 236);
   color: white;
   border-radius: 8px;
+  text-align: center;
 
 }
 
@@ -164,7 +145,6 @@ body {
 
 .hline {
   width: 90%;
-  height: 2px;
   background-color: rgb(95, 93, 93);
   margin: 10px auto;
 }
@@ -382,8 +362,8 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: auto;
+  margin-top: 30px;
 
 }
 
@@ -392,9 +372,10 @@ body {
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  margin-left: 30px;
+ margin-left: 30px;
+ margin-bottom: 20px;
+ margin-top: 30px;
+ 
 }
 
 .ratingform {
@@ -407,7 +388,6 @@ body {
   border-radius: 10px;
   border: 1px solid rgb(186, 201, 214);
   padding: 15px;
-  margin-top: 10px;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -442,20 +422,37 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.menuimg{
+  width: 30px;
+  height: 30px;
+}
 
+
+ 
 @media screen and (max-width: 600px) {
  
-
+.header1{
+  display: flex;
+  flex-direction: row-reverse;
+}
 .hamburger {
   display: block;
   font-size: 28px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-left: 20px;
 }
+.hamburger.active {
+    content: "×"; /* not really needed since we change innerHTML in JS */
+    font-size: 32px; /* optional, bigger X */
+}
+
 
 /* hide nav on mobile */
 .nav1 {
   display: none;
+}
+.ak{
+  margin: 10px auto;
 }
 
 
@@ -464,35 +461,19 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: absolute;
-  background-color: white;
-  width: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 60%;
   height: 100vh;
   top: 64px;      
- right: -50px;
+  left: 0px;
   padding: 10px;
   z-index: 10000;
 }
-.nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 auto 0 auto;
-}
-.buttons{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 auto 0 auto;
-}
+
 .line{
   display: none;
 }
-.nav, .buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  top: 0;
-}
+
 
 
  .footer {
@@ -556,7 +537,26 @@ body {
     padding: 0 20px 5px 20px;
     margin: 0px;
   }
-  
+  .mainrating{
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .ratingform{
+   margin: 0px;
+   width: 80vw;
+  }
+  .mainlogin{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .loginform{
+    width: 80vw;
+  }
+  .header2,.header3{
+    display: none;
+  }
 }
 
 /*===================================khouloud=========================*/
@@ -564,6 +564,7 @@ body {
   background-image: url(media/background.jpg);
   margin: 0px;
   border-radius: 20px;
+  
 }
 
 .welcome h1 {
@@ -1241,7 +1242,7 @@ body {
       padding-top: 100px;
       padding-left: 30px;
       font-size:xxx-large;
-      margin-top: 10px;
+      
    }
     .welcome p{
       color: white;
@@ -1685,13 +1686,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
 }*/
-.homee{
-    border: 2px solid rgb(211, 211, 209);
-    padding: auto;
-    background: rgb(249, 248, 248);
 
-    flex-wrap: wrap;
-  }
 
   .job-form input {
     background-color: #DBEAFE;
@@ -1740,11 +1735,12 @@ body {
 .homee {
   border: 2px solid rgb(211, 211, 209);
   padding: auto;
-  background: rgb(249, 248, 248);
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   padding-bottom: 70px;
   margin-right: 20px;
   margin-left: 20px;
+  margin-top: 30px;
 
 }
 
@@ -2852,7 +2848,7 @@ hr {
 
 .studentServices {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 30px auto auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
