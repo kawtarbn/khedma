@@ -1,16 +1,9 @@
 ﻿/*===========================kawtar==========================*/
 
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-family: "YourPreferredFont", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  box-sizing: border-box;
-}
-*, *::before, *::after { box-sizing: inherit; }
 
 .header1 {
-  /* keep your existing properties, but set a fixed height to avoid mismatch */
-  height: 64px;                /* <-- new fixed height */
+
+  height: 64px;               
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,9 +16,9 @@ html {
   box-shadow: 3px 3px 3px rgb(200, 198, 198);
 }
 
-/* match body padding to header height so content doesn't shift under header */
+
 body {
-  padding-top: 64px;           /* <-- change from 100px to 64px */
+  padding-top: 64px;           
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -56,7 +49,7 @@ body {
 
 }
 
-.img {
+.imgl {
   width: 100%;
   max-width: 120px;
   height: auto;
@@ -469,17 +462,28 @@ body {
 .header1:focus-within .nav1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   background-color: white;
   width: 50%;
   height: 100vh;
   top: 64px;      
-  right: 0;
+ right: -50px;
   padding: 10px;
   z-index: 10000;
 }
-
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto 0 auto;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto 0 auto;
+}
 .line{
   display: none;
 }
