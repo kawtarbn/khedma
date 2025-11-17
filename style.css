@@ -1,4 +1,7 @@
 ﻿/*===========================kawtar==========================*/
+
+
+             
 .header2,.header3{
   display: none;
 }
@@ -21,6 +24,8 @@
   display: none;
 }
 
+
+          
 body {        
   display: flex;
   flex-direction: column;
@@ -478,11 +483,23 @@ body {
   width: 60%;
   height: 100vh;
   top: 64px;      
+ right: -50px;
   left: 0px;
   padding: 10px;
   z-index: 10000;
 }
-
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto 0 auto;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto 0 auto;
+}
 .line{
   display: none;
 }
@@ -620,7 +637,7 @@ body {
 .welcome h1 {
   font-weight: bold;
   color: white;
-  padding-top: 290px;
+  padding-top: 270px;
   padding-left: 100px;
   font-size: xxx-large;
   margin-top: 0px;
@@ -1383,7 +1400,7 @@ body {
      border-radius: 20px;
      border: solid  rgb(167, 163, 163) 2px;
      width: 250px;
-     height: 200px;
+     height: 300px;
      align-items: center;
      border-top: #10B981 solid 6px;
      margin-bottom: 50px ;
@@ -1408,7 +1425,7 @@ body {
      border-radius: 20px;
      border: solid  rgb(167, 163, 163) 2px;
       width: 250px;
-     height: 200px;
+     height: 300px;
      align-items: center;
      border-top: #2563EB solid 6px;
      margin-bottom: 50px ;
@@ -1486,8 +1503,8 @@ body {
     }
 
     .reason-B{
-     width: 40px; 
-     height: 40px;
+     width: 45px; 
+     height: 45px;
      border-radius: 10px;
      padding: 7px;
      background-color: #2563EB;
@@ -1495,8 +1512,8 @@ body {
 
     }
     .reason-V{
-     width: 40px; 
-     height: 40px;
+     width: 45px; 
+     height: 45px;
      border-radius: 10px;
      padding: 7px;
      background-color:#10B981;
@@ -1609,22 +1626,24 @@ body {
     .req p{
      color:#3B4A69 ;
      font: medium;
+     padding: 20px;
     }
     .post-request{
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     margin-top: 20px;
-     margin-left: 20px;
-     margin-right: 20px;
-     margin-bottom: 20px;
-     padding: 20px;
+     margin-top: 20px ;
+     margin-left: 20px !important;
+     margin-right: 20px !important;
+     margin-bottom: 20px !important;
+     padding: 10px ;
      background-color: white;
      border: #DBEAFE solid 2px ;
      border-radius: 10px;
      box-shadow:3px 3px 10px rgba(0,0,0,0.3);
      flex-wrap: wrap;
+     /* width: 80%; */
     }
 
     .post-request p{
@@ -1640,7 +1659,8 @@ body {
      flex-direction: column;
      flex-wrap: wrap;
      align-items: start;
-      margin: 30px;
+      margin: 10px;
+      
     }
 
 
