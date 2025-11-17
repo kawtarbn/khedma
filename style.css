@@ -1,9 +1,7 @@
 ﻿/*===========================kawtar==========================*/
 
 
-.header1 {
-
-  height: 64px;               
+             
 .header2,.header3{
   display: none;
 }
@@ -27,8 +25,7 @@
 }
 
 
-body {
-  padding-top: 64px;           
+          
 body {        
   display: flex;
   flex-direction: column;
