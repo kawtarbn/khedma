@@ -4,31 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Page Title</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header1">
+   <header class="header1">
         <div class="logo">
-            <img src="media/logo.png" alt="logo" class="img">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
 
         <nav class="nav1">
-            <div class="nav">
-                <a class="ak hov"  href="index.html" ><b>Home</b></a>
-                <a class="ak hov"  href="jobs.html" class="hov"><b>Jobs</b></a>
-                <a class="ak hov"  href="student.html" class="hov"><b>Student Services</b></a>
-                <a class="ak hov"  href="rating.html" class="hov"><b>Ratings</b></a>
-                <a class="ak hov"  href="contact.html" class="hov"><b>Contact Us</b></a>
-            </div>
-            <div class="line"></div>
-            <div class="buttons">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak hov" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
                 <a class="ak hov" href="login.html" ><b>Login</b></a>
                 <a class="ak active"  href="sign.html"><b>Sign Up</b></a>
-            </div>
         </nav>
     </header>
     <main class="mainlogin">
@@ -36,8 +31,8 @@
         <p class="endform" style="color: rgb(20, 20, 26);">Create Account</p>
         <p class="endform" style="color:gray;">Join Khedma4Students and start your journey</p>
         <div class="empstu">
-            <a class="ak actform" href="sign.html"><b>Student</b></a>
-            <a class="ak choose" href="signemp.html"><b>Employer</b></a>
+            <a class="al actform" href="sign.html"><b>Student</b></a>
+            <a class="al choose" href="signemp.html"><b>Employer</b></a>
 
         </div>
 
@@ -45,14 +40,14 @@
 
             <form action="">
                 <p><b>Student Sign Up</b></p><br>
-                <label for="namest">Full Name</label><br><br>
-                <input class="inputlog" type="text" id="namest" name="namest"
+                <label for="namestudent">Full Name</label><br><br>
+                <input class="inputlog" type="text" id="namestudent" name="namestudent"
                     placeholder="    Kawtar Benabdelmoumene"><br><br>
-                <label for="emailst">Email</label><br><br>
-                <input class="inputlog" type="text" id="emailst" name="emailst"
+                <label for="emailstudent">Email</label><br><br>
+                <input class="inputlog" type="text" id="emailstudent" name="emailstudent"
                     placeholder="    example@gmail.com"><br><br>
-                <label for="passst">Password</label><br><br>
-                <input class="inputlog" type="password" id="passst" name="passst"><br><br>
+                <label for="passstudent">Password</label><br><br>
+                <input class="inputlog" type="password" id="passstudent" name="passstudent"><br><br>
                 <label for="univ">University/School</label><br><br>
                 <input class="inputlog" type="text" id="univ" name="univ"
                     placeholder="    University of Algiers"><br><br>
@@ -188,5 +183,5 @@
     </footer>
 
 </body>
-
+<script src="header.js"></script>
 </html>
