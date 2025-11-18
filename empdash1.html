@@ -1,19 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true">
-    <title>Khedma4Student</title>
+    <title>My Jobs</title>
     <link rel="stylesheet" href="style.css">
-    
-
-
 </head>
-
 <body>
-    <header id="header-guest" class="header1">
+     <header id="header-guest" class="header1">
         <div class="logo">
             <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
@@ -28,7 +22,6 @@
                 <div class="line"></div>
                 <a class="ak hov" href="login.html" ><b>Login</b></a>
                 <a class="ak hov"  href="sign.html"><b>Sign Up</b></a>
-                 <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
         </nav>
     </header>
     <header id="header-student" class="header1">
@@ -38,14 +31,14 @@
         <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
 
         <nav class="nav1">
-                <a class="ak active" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
                 <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
                 <a class="ak hov" href="student.html" ><b>Student Services</b></a>
                 <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
                 <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
                 <div class="line"></div>
                 <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
-                <a class="ak hov" href="stdashboard1.html"><b>Student</b></a>
+                <a class="ak active" href="stdashboard1.html"><b>Student</b></a>
               <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
 
 
@@ -58,104 +51,119 @@
         <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
 
         <nav class="nav1">
-                <a class="ak active" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
                 <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
                 <a class="ak hov" href="student.html" ><b>Student Services</b></a>
                 <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
                 <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
                 <div class="line"></div>
                 <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
-                <a class="ak hov" href="empdash1.html"><b>Employer</b></a>
+                <a class="ak active" href="empdash1.html"><b>Employer</b></a>
                  <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
         </nav>
     </header>
-    <main>
-    <section class="home">
-        <div class="welcome">
-            <h1> Turn your potential into purpose</h1>
-            <p>Don't wait for opportunity <br>
-                make it happen with Khedma4Student
-            </p>
-            <div class="add">
-                <a href="post-job.html" class="addjob">Post a Job</a>
-                <a  href="post-request.html" class="addrequest">Add a Request</a>
-            </div>
-
+    <section class="stprofile">
+      <div class="hh22">
+<div class="cardd">
+  <div class="profile-header">
+    <div class="profile-info">
+      <div class="logo-circle">TA</div>
+      <div class="profile-text">
+        <h2>TechStart Algeria</h2>
+        <p><strong>Contact Person:</strong> Ahmed Benali</p>
+        <p>Technology Startup<br>Algiers<br>
+           contact@techstart-dz.com<br>
+           0555-123-456
+        </p>
+        <p class="rating">⭐ 4.6 (18 reviews) • 25 successful hires</p>
+      </div>
+     </div>
+    <a href="editprofileemp.html" class="edit-btn">Edit Profile</a>
+    </div>
+</div>
+</div>
+</div>
+    </section>
+    <section class="stcards">
+      <div class="bar1">
+        <div class="ele">
+            <p>Active Jobs <br><br> 4</p>
         </div>
+        <div class="ele">
+            <p>Total Applications <br><br> 41</p>
+        </div>
+        <div class="ele">
+            <p>Total Hires <br><br>25</p>
+        </div>
+        <div class="ele">
+            <p>Average Rating <br><br>4.6</p>
+        </div>
+    </div>
     </section>
-    <section class="categories">
-        <h2>Popular Categories</h2>
-        <p>Explore opportunities across various fields</p>
-        <div class="categories-container">
-            <div class="category2">
-                <img src="media/open-book.png" alt="book">
-                <h3>Tutoring & <br>Education</h3>
-                <p>150+ jobs</p>
-            </div>
+    <section class="mservices">
+    <div class="bar">
+        <a href="empdash1.html" class="al actform"><b>My Jobs</b></a>
+        <a href="empdash2.html" class="al choose"><b>Applications</b></a>
+        <a href="empdash3.html" class="al choose"><b>Reviews</b></a>
+    </div>
+  <div class="jobs-c">
+    <div class="header-jobs">
+      <h2>My Posted Jobs</h2>
+      <a style="text-decoration: none;" href="post-job.html" class="add-service-btn">+ Post New job</a>
+    </div>
 
-            <div class="category1">
-                <img src="media/computer.png" alt="computer">
-                <h3>Freelance & Digital Work</h3>
-                <p>200+ jobs</p>
-            </div>
-            <div class="category2">
-                <img src="media/coffee-cup.png" alt="cup">
-                <h3>Part-Time &<br> Small Jobs</h3>
-                <p>180+ jobs</p>
-            </div>
-
-            <div class="category1">
-                <img src="media/baby-bib.png" alt="baby-bib">
-                <h3>Babysitting & Household Help</h3>
-                <p>90+ jobs</p>
-            </div>
-
-            <div class="category2">
-                <img src="media/truck.png" alt="truck">
-                <h3>Delivery &<br> Errands</h3>
-                <p>120+ jobs</p>
-            </div>
-
+    <!-- Job Card 1 -->
+    <div class="job-c">
+      <div class="job-info">
+        <div class="job-title">
+          <h3>Math Tutor Needed for Bac Preparation</h3>
+          <span class="status act">Active</span>
+        </div>
+        <p class="job-category">Tutoring & Education</p>
+        <div class="job-meta">
+          <span>Posted: 10/12/2025</span>
+          <span>Views: 89</span>
+          <span>Applications: 12</span>
+        </div>
+        </div>
         </div>
 
-    </section>
-    <section class="why_us">
-        <h2>Why Choose Khedma4Students?</h2>
-        <p>The platform built for students, by students</p>
-        <div class="reasons">
-            <div class="reason">
-                <img src="media/magnifying-glass.png" alt="loop" class="reason-B">
-                <h3>Easy Search & Filte</h3>
-                <p>Find jobs quickly by category,<br> location, or keywords</p>
-            </div>
-            <div class="reason">
-                <img src="media/team.png" alt="team" class="reason-V">
-                <h3>Two-Way Posting</h3>
-                <p>Both employers and students<br> can post jobs and services</p>
-            </div>
-            <div class="reason">
-                <img src="media/star.png" alt="star" class="reason-B">
-                <h3>Rating & Reviews</h3>
-                <p>Build trust with a transparent<br> rating system</p>
-            </div>
-            <div class="reason">
-                <img src="media/verified.png" alt="security" class="reason-V">
-                <h3>Safe & Reliable</h3>
-                <p>Verified users and secure <br>communication</p>
-            </div>
+    
 
+    <!-- Job Card 2 -->
+    <div class="job-c">
+      <div class="job-info">
+        <div class="job-title">
+          <h3>Content Writer – Part Time</h3>
+          <span class="status act">Active</span>
         </div>
-    </section>
+        <p class="job-category">Freelance & Digital Work</p>
+        <div class="job-meta">
+          <span>Posted: 10/10/2025</span>
+          <span>Views: 54</span>
+          <span>Applications: 8</span>
+        </div>
+        </div>
+        </div>
+    
 
-    <section class="start">
-        <h2>Ready to Get Started?</h2>
-        <p>Join thousands of students and employers finding opportunities every day</p>
-        <a href="sign.html">Create free acount</a>
-    </section>
-
-
-    </main>
-    <footer class="footer">
+    <!-- Job Card 3 -->
+    <div class="job-c">
+      <div class="job-info">
+        <div class="job-title">
+          <h3>Social Media Manager</h3>
+          <span class="status filled">Filled</span>
+        </div>
+        <p class="job-category">Marketing & Social Media</p>
+        <div class="job-meta">
+          <span>Posted: 10/05/2025</span>
+          <span>Views: 140</span>
+          <span>Applications: 25</span>
+        </div>
+      </div>
+  </div>
+</section>
+     <footer class="footer">
         <div class="items">
             <div class="item1">
                 <img src="media/logo.png" alt="logo" class="imgfooter">
@@ -167,7 +175,7 @@
                     <img class="social" src="media/linkedin.png" alt="">
                 </div>
             </div>
-            <div class="item2">
+             <div class="item2">
                 <h3 style="color: white;">Quick links</h3>
                 <a class="afooter" href="index.html"><b>Home</b></a>
                 <a class="afooter" href="jobs.html"><b>Browse Jobs</b></a>
@@ -206,7 +214,7 @@
         <hr class="hline">
         <div class="underline">
 
-            <h4 class="h4last">® 2025 Khedma4Students. All rights reserved.</h5>
+            <h4 class="h4last">© 2025 Khedma4Students. All rights reserved.</h5>
                 <div class="h4lastright">
                     <h4 class="h4last">Privacy Policy</h5>
                         <h4 class="h4last">Terms of Service</h5>
@@ -214,6 +222,7 @@
                 </div>
         </div>
     </footer>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
