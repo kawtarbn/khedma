@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login As Employer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Employer Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-     <header id="header-guest" class="header1">
+  <header id="header-guest" class="header1">
         <div class="logo">
             <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
         <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
 
         <nav class="nav1">
-                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak active" href="index.html" ><b>Home</b></a>
                 <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
                 <a class="ak hov" href="student.html" ><b>Student Services</b></a>
                 <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
                 <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
                 <div class="line"></div>
-                <a class="ak active" href="login.html" ><b>Login</b></a>
+                <a class="ak hov" href="login.html" ><b>Login</b></a>
                 <a class="ak hov"  href="sign.html"><b>Sign Up</b></a>
         </nav>
     </header>
@@ -40,7 +38,7 @@
                 <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
                 <div class="line"></div>
                 <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
-                <a class="ak hov" href="stdashboard1.html"><b>Student</b></a>
+                <a class="ak active" href="stdashboard1.html"><b>Student</b></a>
               <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
 
 
@@ -60,38 +58,61 @@
                 <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
                 <div class="line"></div>
                 <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
-                <a class="ak hov" href="empdash1.html"><b>Employer</b></a>
+                <a class="ak active" href="empdash1.html"><b>Employer</b></a>
                  <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
         </nav>
     </header>
-    <main class="mainlogin">
-        <img src="media/enter.png" alt="login" style="width:50px; margin-bottom: 5px;">
-        <p class="endform" style="color: rgb(20, 20, 26);">Welcome Back</p>
-        <p class="endform" style="color:gray;">Login to your account to continue</p>
-        <div class="empstu">
-            <a class="al choose" href="login.html"><b>Student</b></a>
-            <a class="al actform" href="emplogin.html"><b>Employer</b></a>
+    <div class="hh22">
+<a href="empdash1.html" class="bk">← Back to Dashboard</a>
+<div class="edit-form">
+  <div class="form-header">
+    
+    <h3>Edit Employer Profile</h3>
+  </div>
 
-        </div>
+  <p>Update your company information to attract top student talent</p>
 
-        <section class="loginform">
-
-            <form action="">
-                <p><b>Employer Login</b></p><br>
-                <label for="emailemp">Email</label><br>
-                <input class="inputlog" type="text" id="emailmp" name="emailemp" placeholder="    enter your email">
-                <label for="passemp">Password</label><br>
-                <input class="inputlog" type="password" id="passemp" name="passemp"
-                    placeholder="    enter your password"><br><br>
-                <button class="btnlog" type="button" onclick="loginAsEmployer();"><b>Login as Employer</b></button>
-
-
-            </form>
-            <p class="endform">Don't have an account?<a class="endform" style="color: blue;text-decoration:none;" href="sign.html"><b>Sign
-                        Up</b></a></p>
-        </section>
-    </main>
-    <footer class="footer">
+  <form>
+    <div>
+      <label class="label1">Company Name</label>
+      <input class="input1" type="text" value="TechStart Algeria">
+    </div>
+    <div>
+      <label class="label1">Company Type</label>
+      <input class="input1" type="text" value="Technology Startup">
+    </div>
+    <div>
+      <label class="label1">Contact Person</label>
+      <input class="input1" type="text" value="Ahmed Benali">
+    </div>
+    <div>
+      <label class="label1">Phone Number</label>
+      <input class="input1" type="text" value="0555-123-456">
+    </div>
+    <div>
+      <label class="label1">Email</label>
+      <input class="input1" type="email" value="contact@techstart-dz.com">
+    </div>
+    <div>
+      <label class="label1">Website</label>
+      <input class="input1" type="text" value="www.techstart-dz.com">
+    </div>
+    <div>
+      <label class="label1">Location</label>
+      <input class="input1" type="text" value="Algiers">
+    </div>
+    <div class="full-width">
+      <label class="label1">Company Description</label>
+      <textarea class="textarea1">A growing tech startup focused on connecting talented Algerian students with exciting opportunities.</textarea>
+    </div>
+    <div class="form-actions">
+      <button class="save-btn">💾 Save Changes</button>
+      <a href="studentdashboard.html" class="cancel-btn">Cancel</a>
+    </div>
+  </form>
+</div>
+</div>
+<footer class="footer">
         <div class="items">
             <div class="item1">
                 <img src="media/logo.png" alt="logo" class="imgfooter">
@@ -112,7 +133,7 @@
                 <a class="afooter" href="home.html"><b>Contact Us</b></a>
             </div>
             <div class="item3">
-                <h3>Categories</h3>
+                <h3 style="color: white;">Categories</h3>
                 <h4 class="h4item3">Tutoring & Education</h4>
                 <h4 class="h4item3">Freelance & Digital Work</h4>
                 <h4 class="h4item3">Part-Time & Small Jobs</h4>
@@ -138,7 +159,7 @@
                 <a href="contact.html" class="btnfoo"><b>Get in touch</b></a>
             </div>
         </div>
-        <br><br>
+
         <hr class="hline">
         <div class="underline">
 
@@ -150,13 +171,6 @@
                 </div>
         </div>
     </footer>
-
-<script>
-function loginAsEmployer(){
-    localStorage.setItem("role", "employer");
-    window.location.href = "index.html";
-}
-</script>
 </body>
 <script src="header.js"></script>
 </html>
