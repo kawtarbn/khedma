@@ -1812,7 +1812,7 @@ body {
   background: rgb(255, 255, 255);
   border-radius: 10px;
   margin:10px 10px 10px;
-  
+}
 
 .tex {
   margin-bottom: 20px;
@@ -2434,7 +2434,7 @@ body {
 }
 
 .textarea {
-  resize: none;
+  resize: none;}
 .Q {
   display: flex;
   justify-content: space-between;
