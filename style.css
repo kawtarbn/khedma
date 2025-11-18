@@ -63,7 +63,10 @@ body {
   width: 100%;
   
 }
-
+.a{
+  text-decoration: none;
+  color: black;
+}
 
 .ak,.al {
  
@@ -1808,10 +1811,10 @@ body {
 
 .homee {
   border: 2px solid rgb(211, 211, 209);
-  padding: 10px;
+  padding: 20px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
-  margin:10px 10px 10px;
+  margin:10px 20px;
 }
 
 .tex {
@@ -2121,15 +2124,11 @@ body {
 
 .msg {
   width: 570px;
+  padding: 20px 10px;
   border-color: aliceblue;
   border-radius: 10px;
-  padding-left: 50x;
-  padding-right: 100px;
-  padding-bottom: 50px;
-  padding-top: 10px;
   text-align: start;
-  margin-bottom: 20px;
-  margin-left: 30px;
+  margin: 10px auto;
   transition: all 0.3s ease;
 }
 
@@ -2140,15 +2139,13 @@ body {
   border: none;
   border-radius: 8px;
   padding: 15px 0;
-  width: 675px;
-  max-width: 900px;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 30px;
+
 }
 
 .but:hover {
@@ -2156,15 +2153,14 @@ body {
 }
 
 .homem {
-  margin-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+ margin: 10px 10px;
+ padding: 10px;
   border-radius: 10px;
   background: rgb(249, 246, 246);
   border: 50px, 5px, 5px, 5px;
   border-color: #1d4ed8;
-
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
   transition: all 0.3s ease;
 }
 
@@ -2279,15 +2275,13 @@ body {
   }
 
   .text,
-  .email,
-  .msg,
   .sub,
   .but {
-    width: 100%;
-    margin-left: 0;
+    width: 60%;
+    margin:5px auto;
   }
 
-  .name {
+  .name{
     justify-content: space-between;
     margin: 10px 0;
   }
@@ -2297,7 +2291,7 @@ body {
   }
 
   .but {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -2311,7 +2305,7 @@ body {
   .email,
   .msg,
   .sub {
-    width: 100%;
+    width: 80vw !important;
   }
 
   .homem {
@@ -2359,9 +2353,9 @@ body {
   padding: 20px;
 }
 
-.S {
+/*.S {
   flex: 1 1 700px;
-}
+}*/
 
 .homem2 {
   background-color: #fff;
@@ -2371,7 +2365,7 @@ body {
   margin-top: 20px;
 }
 
-.text {
+.text1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2415,26 +2409,7 @@ body {
   border: 2px solid #adaaaa;
 }
 
-.label {
-  font-weight: bold;
-  color: #1e3a8a;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
 
-.input,
-.textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #e0e7ff;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-.textarea {
-  resize: none;}
 .Q {
   display: flex;
   justify-content: space-between;
@@ -2541,9 +2516,7 @@ body {
     margin-left: 0;
   }
 
-  .btnm {
-    margin-left: 0;
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -3323,45 +3296,6 @@ hr {
   color: #1f2937;
 }
 
-/* Form layout */
-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
-  row-gap: 30px;
-  /* Adds vertical spacing between inputs */
-}
-
-/*label {
-  display: block;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background-color: #f9fafb;
-  font-size: 15px;
-  transition: border 0.2s, box-shadow 0.2s;
-  box-sizing: border-box;
-
-input:focus,
-textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 8px rgba(37, 99, 235, 0.25);
-  outline: none;
-}
-
-textarea {
-  resize: none;
-  height: 100px;
-}*/
-
 .full-width {
   grid-column: span 2;
 }
@@ -3417,7 +3351,7 @@ textarea {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  form {
+  .form {
     grid-template-columns: 1fr;
     row-gap: 22px;
   }
