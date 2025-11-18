@@ -1,4 +1,31 @@
 ﻿/*===========================kawtar==========================*/
+
+input.error {
+    border: 2px solid red;       
+    background-color: #ffe6e6;  
+}
+
+input.success {
+    border: 2px solid green;     
+    background-color: #e6ffe6;   /
+}
+
+
+small.error {
+    color: red;                  
+    font-size: 0.9em;            
+    display: block;              
+    margin-top: 5px;              
+    white-space: pre-line;       
+}
+
+
+small.success {
+    color: green;
+    display: block;
+    margin-top: 5px;
+}
+
 #header-student,
 #header-employer {
     display: none;
@@ -302,31 +329,6 @@ body {
   align-items: center;
 }
 
-/*.choose {
-  height: 15px;
-  width: 180px;
-  background-color: rgb(219, 234, 254);
-  padding: 5px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  border-radius: 30px;
-  justify-content: center;
-
-}
-
-.actform {
-  height: 15px;
-  width: 180px;
-  background-color: white;
-  padding: 5px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  border-radius: 30px;
-  justify-content: center;
-}*/
-
 .choose,
 .actform {
   width: 180px;
@@ -456,8 +458,8 @@ body {
   margin-left: 20px;
 }
 .hamburger.active {
-    content: "×"; /* not really needed since we change innerHTML in JS */
-    font-size: 32px; /* optional, bigger X */
+    content: "×"; 
+    font-size: 32px; 
 }
 
 .btnlog{
@@ -465,7 +467,7 @@ body {
  margin: 10px 10px;
 
 }
-/* hide nav on mobile */
+
 .nav1 {
   display: none;
 }
@@ -1215,105 +1217,7 @@ body {
   flex: 1;
 }
 
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%responsive %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%├╣├╣├╣ */
 
-/* @media (max-width: 600px) {
-  .welcome h1 {
-    font-weight: bold;
-    color: white;
-    padding-top: 100px;
-    padding-left: 30px;
-    font-size: x-large;
-    margin-top: 0px;
-  }
-
-
-.How-it-works{
-    background: linear-gradient(to right, #EFF6FF, #F0FDF4);
-    margin-left:130px !important;
-    margin-right: 130px !important;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 100px;
-}
-.How-it-works h4{
-  font-size: larger;
-}
-.How-it-works h5{
-  .welcome p {
-    color: white;
-    font-size: 10px;
-    padding-left: 50px;
-    padding-bottom: 10px;
-
-    font-size: medium;
-  }
-
-  .add {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-left: 50px !important;
-    margin-bottom: 10px;
-  }
-
-  .addjob {
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 15px;
-    border-radius: 20px;
-    color: white;
-    background: #2563EB;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-
-  .addrequest {
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    box-sizing: border-box;
-    padding: 15px;
-    border-radius: 20px;
-    color: rgb(4, 0, 0);
-    background: #e9ecea;
-    text-decoration: none;
-  }
-
-  .postjob {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: white;
-    border: #DBEAFE solid 2px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .job-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 60%;
-    padding: 10px;
-    text-align: left !important;
-
-}
-.step p{
-  font-size: larger;
-}
-} */ 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%responsive %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ùùù */
 
@@ -1441,8 +1345,7 @@ body {
      padding-bottom: 20px;
      text-align: center;
      font-size: larger;
-     /* margin-left: 25px;
-     margin-right: 25px; */
+    
     }
    .category2:hover{
       transform: translateY(-10px);
@@ -1554,8 +1457,7 @@ body {
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
-     /* justify-content: center; */
-     /* align-items: center; */
+     
      margin-top: 20px;
      margin-left: 30px;
      margin-right: 30px;
