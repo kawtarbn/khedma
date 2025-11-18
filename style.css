@@ -3332,7 +3332,7 @@ form {
   /* Adds vertical spacing between inputs */
 }
 
-label {
+/*label {
   display: block;
   font-size: 15px;
   font-weight: 600;
@@ -3349,7 +3349,6 @@ textarea {
   font-size: 15px;
   transition: border 0.2s, box-shadow 0.2s;
   box-sizing: border-box;
-}
 
 input:focus,
 textarea:focus {
@@ -3361,7 +3360,7 @@ textarea:focus {
 textarea {
   resize: none;
   height: 100px;
-}
+}*/
 
 .full-width {
   grid-column: span 2;
