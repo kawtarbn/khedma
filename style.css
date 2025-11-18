@@ -1,9 +1,7 @@
 ﻿/*===========================kawtar==========================*/
-
-
-             
-.header2,.header3{
-  display: none;
+#header-student,
+#header-employer {
+    display: none;
 }
 
 .header1 {
@@ -26,19 +24,18 @@
 
 
           
-body {        
+body {     
+  padding-top: 70px;   
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-   padding-top: 70px !important;
-   /*background-color: #F9FAFB;*/
+   
 }
 
 
 html,
 body {
   margin: 0;
-  padding: 0;
   height: 100%;
   font-size: 16px;
 
@@ -59,11 +56,12 @@ body {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  max-width:50vw;
-  width: 100%;
-  
+  width: 60vw;
 }
-
+.a{
+  text-decoration: none;
+  color: black;
+}
 
 .ak,.al {
  
@@ -601,7 +599,7 @@ body {
   margin: 0px auto;
   background-color: rgb(219, 234, 254);
   border-radius: 30px;
-  width:95vw;
+  width:80vw;
   padding: 0px;
   display: flex;
   flex-direction: row;
@@ -614,19 +612,27 @@ body {
   
   
 }
+.services-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  margin: 10px auto;
+}
 .commentaire{
   border: 2px solid  rgb(178, 178, 178) ;
   border-radius: 10px;
   padding: 5px;
-  margin: 10px auto;
+  margin: 10px 20px;
 }
 .stprofile{
   flex: 1;
+  margin: 10px auto;
   
 }
 .stcards{
   flex: 2;
-  width: 80vw;
+ 
 }
 /*===================================khouloud=========================*/
 .welcome {
@@ -1808,14 +1814,14 @@ body {
 
 .homee {
   border: 2px solid rgb(211, 211, 209);
-  padding: 10px;
+  padding: 20px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
-  margin:10px 10px 10px;
-  
+  margin:10px 15px;
+}
 
 .tex {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .look {
@@ -2121,15 +2127,11 @@ body {
 
 .msg {
   width: 570px;
+  padding: 20px 10px;
   border-color: aliceblue;
   border-radius: 10px;
-  padding-left: 50x;
-  padding-right: 100px;
-  padding-bottom: 50px;
-  padding-top: 10px;
   text-align: start;
-  margin-bottom: 20px;
-  margin-left: 30px;
+  margin: 10px auto;
   transition: all 0.3s ease;
 }
 
@@ -2140,15 +2142,12 @@ body {
   border: none;
   border-radius: 8px;
   padding: 15px 0;
-  width: 675px;
-  max-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 30px;
+
 }
 
 .but:hover {
@@ -2156,16 +2155,16 @@ body {
 }
 
 .homem {
-  margin-left: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+ margin: 10px 10px;
+ padding: 10px;
   border-radius: 10px;
   background: rgb(249, 246, 246);
   border: 50px, 5px, 5px, 5px;
   border-color: #1d4ed8;
-
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
   transition: all 0.3s ease;
+  width: 60vw;
 }
 
 .phone {
@@ -2186,11 +2185,13 @@ body {
 }
 
 .ttl {
-  margin-left: 100px;
+  margin: 10px auto;
 }
 
 .A {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text:focus,
@@ -2266,28 +2267,28 @@ body {
   .A {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .ttl {
-    margin-left: 0;
+    margin:0px auto ;
     text-align: center;
+    width:90%;
   }
 
   .homem {
-    margin: 20px auto;
-    width: 90%;
+    margin: 0px auto;
+    width: 85%;
   }
 
   .text,
-  .email,
-  .msg,
   .sub,
   .but {
-    width: 100%;
-    margin-left: 0;
+    width: 60%;
+    margin:5px auto;
   }
 
-  .name {
+  .name{
     justify-content: space-between;
     margin: 10px 0;
   }
@@ -2297,7 +2298,7 @@ body {
   }
 
   .but {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -2311,7 +2312,7 @@ body {
   .email,
   .msg,
   .sub {
-    width: 100%;
+    width: 80vw !important;
   }
 
   .homem {
@@ -2359,9 +2360,9 @@ body {
   padding: 20px;
 }
 
-.S {
+/*.S {
   flex: 1 1 700px;
-}
+}*/
 
 .homem2 {
   background-color: #fff;
@@ -2371,7 +2372,7 @@ body {
   margin-top: 20px;
 }
 
-.text {
+.text1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2386,6 +2387,7 @@ body {
 
 .job-info {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   margin-top: 10px;
   font-size: 16px;
@@ -2415,26 +2417,7 @@ body {
   border: 2px solid #adaaaa;
 }
 
-.label {
-  font-weight: bold;
-  color: #1e3a8a;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
 
-.input,
-.textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #e0e7ff;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-.textarea {
-  resize: none;
 .Q {
   display: flex;
   justify-content: space-between;
@@ -2465,6 +2448,8 @@ body {
   border-radius: 5px;
   text-decoration: none;
   margin-top: 10px;
+  
+
 }
 
 .apply-btn:hover {
@@ -2492,6 +2477,7 @@ body {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
+  margin-top: 70px;
   width: 90%;
   max-width: 500px;
   position: relative;
@@ -2541,9 +2527,7 @@ body {
     margin-left: 0;
   }
 
-  .btnm {
-    margin-left: 0;
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -2553,7 +2537,8 @@ body {
   }
 
   .apply-btn {
-    width: 100%;
+    width: 90%;
+  
   }
 
   .homem2, .M, .card, .form-box {
@@ -2579,18 +2564,6 @@ body {
   padding: 30px;
 }
 
-.container2 {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.back-link {
-  display: inline-block;
-  color: #0d2b45;
-  text-decoration: none;
-  margin-bottom: 20px;
-  font-size: 0.95rem;
-}
 
 .main-content {
   display: flex;
@@ -2746,7 +2719,8 @@ hr {
 .login-btn {
   display: block;
   width: 100%;
-  background-color: #88a9ff;
+  background-color: #1cbf6b;
+  color: #fff;
   color: white;
   border: none;
   padding: 10px 0;
@@ -2757,7 +2731,7 @@ hr {
 }
 
 .login-btn:hover {
-  background-color: #6f90e9;
+  background-color:  #1cbf6b;
 }
 
 .note {
@@ -2773,9 +2747,7 @@ hr {
     flex-direction: column;
   }
 
-  .contact-card {
-    width: 100%;
-  }
+
 
   .job-header {
     flex-direction: column;
@@ -2786,7 +2758,7 @@ hr {
 /*==================syudent===============*/
 
 .studentServices {
-  width: 80vw;
+  width: 85vw;
   margin: 10px auto;
   padding: 20px;
   border-radius: 8px;
@@ -3030,16 +3002,18 @@ hr {
 }
 
 .container2 {
-  max-width: 1100px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  margin: 10px auto;
 }
 
 .back-link {
   display: inline-block;
   color: #0d2b45;
   text-decoration: none;
-  margin-bottom: 20px;
   font-size: 0.95rem;
+  margin-top: 10px;
 }
 
 .main-content {
@@ -3193,22 +3167,7 @@ hr {
   width: 18px;
 }
 
-.login-btn {
-  display: block;
-  width: 100%;
-  background-color: #88a9ff;
-  color: white;
-  border: none;
-  padding: 10px 0;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  margin-top: 15px;
-  cursor: pointer;
-}
 
-.login-btn:hover {
-  background-color: #6f90e9;
-}
 
 .note {
   text-align: center;
@@ -3231,19 +3190,7 @@ hr {
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
 }
 
-/* Edit form container */
-.edit-form {
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 40px 50px;
-  max-width: 900px;
-  margin: 40px auto;
-  /* Adds clean spacing below fixed header */
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
-}
 
-/* Profile header section */
 .profile-header {
   display: flex;
   align-items: center;
@@ -3287,17 +3234,6 @@ hr {
   margin-top: 10px;
 }
 
-/* Edit button */
-.edit-btn {
-  background-color: #2563eb;
-  color: white;
-  padding: 12px 22px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-}
 
 .edit-btn:hover {
   background-color: #1d4ed8;
@@ -3321,46 +3257,6 @@ hr {
   margin: 0;
   font-size: 18px;
   color: #1f2937;
-}
-
-/* Form layout */
-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
-  row-gap: 30px;
-  /* Adds vertical spacing between inputs */
-}
-
-label {
-  display: block;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background-color: #f9fafb;
-  font-size: 15px;
-  transition: border 0.2s, box-shadow 0.2s;
-  box-sizing: border-box;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 8px rgba(37, 99, 235, 0.25);
-  outline: none;
-}
-
-textarea {
-  resize: none;
-  height: 100px;
 }
 
 .full-width {
@@ -3411,14 +3307,11 @@ textarea {
   background-color: #e5e7eb;
 }
 
-.bk {
-  text-decoration: none;
-  margin-left: 280px;
-}
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  form {
+  .form {
     grid-template-columns: 1fr;
     row-gap: 22px;
   }
@@ -3451,19 +3344,12 @@ textarea {
     flex-direction: column;
   }
 
-  .contact-card {
-    width: 100%;
-  }
+  
 
   .job-header {
     flex-direction: column;
     align-items: flex-start;
   }
-}
-/* Container */
-.services-container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 /* Header Section */
@@ -3547,17 +3433,7 @@ textarea {
   font-size: 0.95rem;
 }
 
-/* Edit Button */
-.edit-btn {
-  border: 1px solid #cbd5e1;
-  background: white;
-  color: #0f172a;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 
 .edit-btn:hover {
   background-color: #f1f5f9;
@@ -3585,9 +3461,13 @@ textarea {
 
 
 /* Container */
-.jobs-container {
-  max-width: 1000px;
-  margin: 0 auto;
+.jobs-c{
+   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90vw;
+  margin: 10px auto;
+
 }
 
 /* Header */
@@ -3623,16 +3503,16 @@ textarea {
 
 /* Job Card */
 .job-c {
-  background-color: white;
+ background-color: white;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 20px 25px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-}
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);}
 
 /* Job Info */
 .job-title {
@@ -3677,18 +3557,6 @@ textarea {
   gap: 25px;
   color: #64748b;
   font-size: 0.95rem;
-}
-
-/* Edit Button */
-.edit-btn {
-  border: 1px solid #cbd5e1;
-  background: white;
-  color: #0f172a;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .edit-btn:hover {
@@ -3750,10 +3618,9 @@ textarea {
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
+  width: 80vw;
   padding: 20px;
-  width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
   /* Adds clean spacing below fixed header */
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
 }
@@ -3864,6 +3731,7 @@ textarea {
   font-size: 15px;
   transition: border 0.2s, box-shadow 0.2s;
   box-sizing: border-box;
+  margin: 10px auto;
 }
 
 .input1:focus,
@@ -3930,6 +3798,9 @@ textarea {
   text-decoration: none;
   margin-left: 30px;
 }
+.hh22{
+  margin-top: 20px;
+}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
@@ -3949,7 +3820,7 @@ textarea {
     font-size: 28px;
   }
 
-  .card,
+  .cardd,
   .edit-form {
     padding: 20px;
   }
@@ -3967,12 +3838,17 @@ textarea {
   }
 
   .contact-card {
-    width: 100%;
+    width: 85%;
+    margin: 10px auto;
   }
 
   .job-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .stprofile{
+    width: 80vw;
+    margin: 5px 20px;
   }
 }
 
@@ -3981,14 +3857,12 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.stprofile{
-  margin-bottom: 10px;
-}
-.bar{
+.bar1{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     margin: auto;
 
 }
@@ -3997,7 +3871,8 @@ textarea {
     text-align: left;
     border: 1px solid #e1e1e1;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
+    margin: 10px;
     width: 10em;
 }
 /* HEADER */
@@ -4005,29 +3880,13 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    margin: 20px;
 }
 
 .header-bar h2 {
     font-size: 22px;
 }
 
-/*.bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-    margin: auto;
-
-}
-
-.ele{
-    text-align: left;
-    border: 1px solid #e1e1e1;
-    border-radius: 12px;
-    padding: 30px;
-    width: 10em;
-}*/
 
 
 
@@ -4243,7 +4102,7 @@ textarea {
     }
 
    
-    .bar {
+    .bar1 {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -4251,8 +4110,10 @@ textarea {
     }
 
     .ele {
-        width: 100%;
+        width: 70%;
         padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ele p {
