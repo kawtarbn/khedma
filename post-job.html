@@ -34,29 +34,33 @@
             <p>Share job opportunities and attract talented students</p>
             <div class="job-form">
                 <h4>Job details :</h4>
-                <form action="">
-                    <label for="">Service title</label><br>
-                    <input type="text" placeholder="e.g.,math Tutoring - All levels" required>
+                <form id="job-form" action="">
+                    <label for="job_title">Service title</label><br>
+                    <input id="job_title" type="text" placeholder="e.g.,math Tutoring - All levels" required>
+                    
+                    
                     <br><br>
-                    <label for="">Description</label><br>
-                    <textarea name="" id="" rows="6" cols="40"placeholder="Describe the job responsibilities, required qualifications, and what your company offers..." required></textarea>
+                    <label for="job_description">Description</label><br>
+                    <textarea name="job_description" id="job_description" rows="6" cols="40"placeholder="Describe the job responsibilities, required qualifications, and what your company offers..." required></textarea>
+                    
+                    
                     <br><br>
                     <div class="city-category">
                      <div>
-                         <label for="">Category</label><br>
-                         <select id="" name="" required  >
+                         <label for="job_category">Category</label><br>
+                         <select id="job_category" name="job_category" required  >
                              <option value="">-- select a category -- </option>
-                             <option value="">Tutoring & education </option>
-                             <option value="">Freelance & degital work</option>
-                             <option value="">Part time & small jobs </option>
-                              <option value="">Babysitting & Household Help</option>
-                             <option value="">Delivery and Errands</option>
+                             <option value="Tutoring & education">Tutoring & education </option>
+                             <option value="Freelance & degital work">Freelance & degital work</option>
+                             <option value="Part time & small jobs">Part time & small jobs </option>
+                              <option value="Babysitting & Household Help">Babysitting & Household Help</option>
+                             <option value="Delivery and Errands">Delivery and Errands</option>
                          </select>
                        </div>
                      <!-- <br><br> -->
                       <div>
-                         <label for="">City</label><br>
-                         <select name="" id="" >
+                         <label for="job_city">City</label><br>
+                         <select name="job_city" id="job_city" >
                              <option value=""> -- select a city --</option>
                              <option value="Adrar">Adrar</option>
                              <option value="Chlef">Chlef</option>
@@ -121,10 +125,10 @@
                     </div>
                     <br><br>
 
-                    <label for="">Contact information</label><br>
-                    <div class="contact-info">
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Phone number">
+                    <label for="std_contact">Contact information</label><br>
+                    <div id="std_contact" class="contact-info">
+                        <input id="std_email" type="email" placeholder="Email">
+                        <input id="std_phone" type="tel" placeholder="Phone number">
                     </div>
 
                     <br>
@@ -150,6 +154,7 @@
 
         </section>
     </main>
+    <script src="valid_post_job.js"></script>
     <footer class="footer">
         <div class="items">
             <div class="item1">
