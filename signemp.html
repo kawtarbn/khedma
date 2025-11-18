@@ -76,7 +76,7 @@
 
         <section class="loginform">
 
-            <form action="">
+            <form action="" id="employerSignUpForm">
                 <p><b>Employer Sign Up</b></p><br>
                 <label for="namemployer">Full Name</label><br>
                 <input class="inputlog" type="text" id="namemployer" name="namemployer"
@@ -151,8 +151,9 @@
                     <option value="el-meghaier">El Meghaier</option>
                     <option value="el-menouea">El Menouea</option>
                 </select><br><br>
+                <small id="employerSignUpError"></small>
+                <button type="submit" class="btnlog"><b>Create Employer Account</b></button>
 
-                <button type="button" class="btnlog" onclick="createEmployerAccount()"><b>Create Employer Account</b></button>
 
 
 
@@ -220,12 +221,7 @@
                 </div>
         </div>
     </footer>
-<script>
-function createEmployerAccount() {
-    localStorage.setItem("role", "employer");
-    window.location.href = "index.html";
-}
-</script>
+
+<script src="index.js"></script>
 </body>
-<script src="header.js"></script>
 </html>

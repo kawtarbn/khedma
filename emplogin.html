@@ -76,14 +76,16 @@
 
         <section class="loginform">
 
-            <form action="">
+            <form action="" id="employerLoginForm">
                 <p><b>Employer Login</b></p><br>
                 <label for="emailemp">Email</label><br>
                 <input class="inputlog" type="text" id="emailmp" name="emailemp" placeholder="    enter your email">
                 <label for="passemp">Password</label><br>
                 <input class="inputlog" type="password" id="passemp" name="passemp"
                     placeholder="    enter your password"><br><br>
-                <button class="btnlog" type="button" onclick="loginAsEmployer();"><b>Login as Employer</b></button>
+                    <small id="employerLoginError"></small>
+                <button class="btnlog" type="submit"><b>Login as Employer</b></button>
+
 
 
             </form>
@@ -151,12 +153,6 @@
         </div>
     </footer>
 
-<script>
-function loginAsEmployer(){
-    localStorage.setItem("role", "employer");
-    window.location.href = "index.html";
-}
-</script>
+<script src="index.js"></script>
 </body>
-<script src="header.js"></script>
 </html>
