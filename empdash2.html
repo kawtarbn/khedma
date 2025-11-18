@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Jobs</title>
+    <title>Applications</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header1">
+     <header id="header-guest" class="header1">
         <div class="logo">
             <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
@@ -22,6 +22,44 @@
                 <div class="line"></div>
                 <a class="ak hov" href="login.html" ><b>Login</b></a>
                 <a class="ak hov"  href="sign.html"><b>Sign Up</b></a>
+        </nav>
+    </header>
+    <header id="header-student" class="header1">
+        <div class="logo">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
+        </div>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
+
+        <nav class="nav1">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak hov" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
+                <a class="ak active" href="stdashboard1.html"><b>Student</b></a>
+              <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
+
+
+        </nav>
+    </header>
+    <header id="header-employer" class="header1">
+        <div class="logo">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
+        </div>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
+
+        <nav class="nav1">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak hov" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
+                <a class="ak activev" href="empdash1.html"><b>Employer</b></a>
+                 <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
         </nav>
     </header>
     <section class="stprofile">
@@ -62,15 +100,15 @@
         </div>
     </div>
     </section>
-    <section class="streviews">
+    <section class="mservices">
     <div class="bar">
-        <a href="stdashboard1.html" class="al choose"><b>My services</b></a>
-        <a href="stdashboard2.html" class="al actform"><b>Applications</b></a>
-        <a href="stdashboard3.html" class="al choose"><b>Reviews</b></a>
+        <a href="empdash1.html" class="al choose"><b>My Jobs</b></a>
+        <a href="empdash2.html" class="al actform"><b>Applications</b></a>
+        <a href="empdash3.html" class="al choose"><b>Reviews</b></a>
     </div>
       <div class="header-bar">
         <h2>Recent Applications</h2>
-        <button class="browse-btn">Browse Student Services</button>
+       
     </div>
 
 
@@ -91,11 +129,8 @@
                 </div>
             </div>
         </div>
-
-        <div class="app-right">
-            
-            <button class="details-btn">View Application</button>
-        </div>
+   
+     
     </div>
 
 
@@ -116,10 +151,7 @@
             </div>
         </div>
 
-        <div class="app-right">
-            
-            <button class="details-btn">View Application</button>
-        </div>
+        
     </div>
 
 
@@ -140,10 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="app-right">
-            
-            <button class="details-btn">View Application</button>
-        </div>
+       
 
     </div>
 
@@ -167,11 +196,9 @@
 
 
 
-        <div class="app-right">
-            
-            <button class="details-btn">View Application</button>
-        </div>
+       
     </div>
+    </section>
      <footer class="footer">
         <div class="items">
             <div class="item1">
@@ -231,6 +258,6 @@
                 </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
-<script src="header.js"></script>
 </html>

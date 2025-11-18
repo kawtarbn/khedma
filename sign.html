@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   <header class="header1">
+    <header id="header-guest" class="header1">
         <div class="logo">
             <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
@@ -26,6 +26,44 @@
                 <a class="ak active"  href="sign.html"><b>Sign Up</b></a>
         </nav>
     </header>
+    <header id="header-student" class="header1">
+        <div class="logo">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
+        </div>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
+
+        <nav class="nav1">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak hov" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
+                <a class="ak hov" href="stdashboard1.html"><b>Student</b></a>
+              <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
+
+
+        </nav>
+    </header>
+    <header id="header-employer" class="header1">
+        <div class="logo">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
+        </div>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
+
+        <nav class="nav1">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak hov" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="notificationsemp.html" ><b>Notifications</b></a>
+                <a class="ak hov" href="empdash1.html"><b>Employer</b></a>
+                 <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
+        </nav>
+    </header>
     <main class="mainlogin">
         <img src="media/add-user.png" alt="login" style="width:50px; margin-bottom: 5px;">
         <p class="endform" style="color: rgb(20, 20, 26);">Create Account</p>
@@ -36,25 +74,25 @@
 
         </div>
 
-        <section class="loginform">
+        <section class="loginform" >
 
-            <form action="">
-                <p><b>Student Sign Up</b></p><br>
-                <label for="namestudent">Full Name</label><br>
-                <input class="inputlog" type="text" id="namestudent" name="namestudent"
-                    placeholder="    Kawtar Benabdelmoumene"><br>
-                <label for="emailstudent">Email</label><br>
-                <input class="inputlog" type="text" id="emailstudent" name="emailstudent"
-                    placeholder="    example@gmail.com"><br>
-                <label for="passstudent">Password</label><br>
-                <input class="inputlog" type="password" id="passstudent" name="passstudent"><br>
-                <label for="univ">University/School</label><br>
-                <input class="inputlog" type="text" id="univ" name="univ"
-                    placeholder="    University of Algiers"><br>
-                <label for="City">City</label><br>
-                <select class="inputlog" id="city" name="city">
-                    <option value="">-- Select your city --</option>
-                    <option value="adrar">Adrar</option>
+            <form action="" id="studentSignUpForm">
+    <p><b>Student Sign Up</b></p><br>
+    <label for="namestudent">Full Name</label><br>
+    <input class="inputlog" type="text" id="namestudent" name="namestudent"
+        placeholder="    Kawtar Benabdelmoumene"><br>
+    <label for="emailstudent">Email</label><br>
+    <input class="inputlog" type="text" id="emailstudent" name="emailstudent"
+        placeholder="    example@gmail.com"><br>
+    <label for="passtudent">Password</label><br>
+    <input class="inputlog" type="password" id="passtudent" name="passtudent"><br>
+    <label for="univ">University/School</label><br>
+    <input class="inputlog" type="text" id="univ" name="univ"
+        placeholder="    University of Algiers"><br>
+    <label for="city">City</label><br>
+    <select class="inputlog" id="city" name="city">
+        <option value="">-- Select your city --</option>
+        <option value="adrar">Adrar</option>
                     <option value="chlef">Chlef</option>
                     <option value="laghouat">Laghouat</option>
                     <option value="oum-el-bouaghi">Oum El Bouaghi</option>
@@ -113,11 +151,11 @@
                     <option value="el-meghaier">El Meghaier</option>
                     <option value="el-menouea">El Menouea</option>
                 </select><br><br>
-                <button class="btnlog"><b>Create Student Account</b></button>
+    </select><br><br>
+    <small id="studentSignUpError"></small>
+    <button class="btnlog" type="submit"><b>Create Student Account</b></button>
+</form>
 
-
-
-            </form>
             <p class="endform">Already have an account?<a class="endform" style="color: blue;text-decoration:none;" href="login.html"><b>
                         Login</b></a></p>
         </section>
@@ -181,7 +219,7 @@
                 </div>
         </div>
     </footer>
-
+<script src="index.js"></script>
 </body>
-<script src="header.js"></script>
+
 </html>

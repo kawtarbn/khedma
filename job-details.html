@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header class="header1">
+    <header id="header-guest" class="header1">
         <div class="logo">
             <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
         </div>
@@ -24,12 +24,50 @@
                 <a class="ak hov" href="sign.html"><b>Sign Up</b></a>
         </nav>
     </header>
+    <header id="header-student" class="header1">
+        <div class="logo">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
+        </div>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
+
+        <nav class="nav1">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak active" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
+                <a class="ak hov" href="stdashboard1.html"><b>Student</b></a>
+              <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
+
+
+        </nav>
+    </header>
+    <header id="header-employer" class="header1">
+        <div class="logo">
+            <a href="index.html"> <img src="media/logo.png" alt="logo" class="imgl"></a>
+        </div>
+        <div class="hamburger" tabindex="0"><img src="media/menu.png" alt="menu" class="menuimg"></div>
+
+        <nav class="nav1">
+                <a class="ak hov" href="index.html" ><b>Home</b></a>
+                <a class="ak hov" href="jobs.html"><b>Jobs</b></a>
+                <a class="ak active" href="student.html" ><b>Student Services</b></a>
+                <a class="ak hov" href="rating.html" ><b>Ratings</b></a>
+                <a class="ak hov" href="contact.html" ><b>Contact Us</b></a>
+                <div class="line"></div>
+                <a class="ak hov" href="notification.html" ><b>Notifications</b></a>
+                <a class="ak hov" href="empdash1.html"><b>Employer</b></a>
+                 <a class="ak hov" id="logoutBtn" href="#" onclick="logoutUser()" style="display:none;"><b>Logout</b></a>
+        </nav>
+    </header>
   <section class="container2">
 
-    <a href="student.html" class="back-link">← Back to listings</a>
+    
 
     <div class="main-content">
-      
+      <a href="student.html" class="back-link">← Back to listings</a>
       <div class="job-details">
         <div class="job-header">
           <h2>Graphic Designer Available for Freelance Work</h2>
@@ -92,16 +130,42 @@
       <!-- Right side -->
       <aside class="contact-card">
         <h3>Contact Information</h3>
-        <div class="email">
+        <div class="emailm3">
           <img src="media/mail.png">
           <p>amina.kaci@email.dz</p>
         </div>
         <hr>
-        <button class="login-btn">Login to Apply</button>
+        <button class="login-btn" onclick="location.href='#modalbox'">
+              Apply Now
+            </button>
+
         <p class="note">You need to be logged in to apply for jobs</p>
       </aside>
     </div>
   </section>
+  <div id="modalbox" class="modal">
+    <div class="modalcontent">
+        <div class="form-box">
+            <a class="a" href="job-details.html" class="F">&times;</a>
+    <h2 class="h2m">Apply for this Job</h2>
+    <form>
+      <label class="label">Full Name</label><br>
+      <input class="input" type="text" name="fullname"><br>
+
+      <label class="label">Email</label><br>
+      <input class="input" type="email" name="email"><br>
+
+      <label class="label">Phone Number</label><br>
+      <input class="input" type="text" name="phone"><br>
+
+      <label class="label">Cover Message</label><br>
+      <textarea class="textarea" name="message" rows="4" placeholder="Tell them why you're a great fit..."></textarea><br>
+
+          <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
         <div class="items">
             <div class="item1">
@@ -161,7 +225,7 @@
                 </div>
         </div>
     </footer>
-
+<script src="index.js"></script>
 </body>
-<script src="header.js"></script>
+
 </html>
