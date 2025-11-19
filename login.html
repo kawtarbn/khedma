@@ -76,18 +76,16 @@
 
         <section class="loginform">
 
-            <form action="">
-                <p><b>Student Login</b></p><br>
-                <label for="emailst">Email</label><br>
-                <input class="inputlog" type="text" id="emailst" name="emailst" placeholder="    enter your email">
-                <label for="passst">Password</label><br>
-                <input class="inputlog" type="password" id="passst" name="passst"
-                    placeholder="    enter your password"><br><br>
-                <button class="btnlog"><b>Login as Student</b></button>
+           <form action="" id="studentLoginForm">
+    <p><b>Student Login</b></p><br>
+    <label for="emailst">Email</label><br>
+    <input class="inputlog" type="text" id="emailst" name="emailst" placeholder="    enter your email">
+    <label for="passst">Password</label><br>
+    <input class="inputlog" type="password" id="passst" name="passst" placeholder="    enter your password"><br><br>
+    <small id="studentSignUpError"></small>
+    <button class="btnlog" type="submit"><b>Login as Student</b></button>
+</form>
 
-
-
-            </form>
             <p class="endform">Don't have an account?<a class="endform" style="color: blue; text-decoration:none;" href="sign.html" ><b>Sign
                         Up</b></a></p>
         </section>
@@ -151,6 +149,6 @@
                 </div>
         </div>
     </footer>
-
+<script src="index.js"></script>
 </body>
 </html>
