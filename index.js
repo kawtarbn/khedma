@@ -324,15 +324,19 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   
-  const hamburger = document.querySelectorAll('.hamburger');
-  hamburger.forEach(h => {
-    const nav = h.nextElementSibling;
-    h.addEventListener('click', () => {
-      nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-      h.innerHTML = h.innerHTML.includes('menu.png') ?
-        '<img src="media/close.png" alt="close" style="width:30px; height:30px">' :
-        '<img src="media/menu.png" alt="menu" style="width:30px;height:30px">';
-    });
-  });
+  const hamburgers = document.querySelectorAll('.hamburger');
 
-}); 
+hamburgers.forEach(h => {
+  const nav = h.nextElementSibling;
+
+  h.addEventListener('click', () => {
+    nav.classList.toggle('show');
+
+    if (nav.classList.contains('show')) {
+      h.innerHTML = `<img src="media/close.png" alt="close" style="width:30px;height:30px">`;
+    } else {
+      h.innerHTML = `<img src="media/menu.png" alt="menu" style="width:30px;height:30px">`;
+    }
+  });
+});
+
