@@ -1,50 +1,53 @@
-// Function to validate individual input
-function validateInput(input, condition) {
-    if (condition) {
-        input.style.border = "2px solid green";
-    } else {
-        input.style.border = "2px solid red";
-    }
-}
-
-// Generic function to validate a form
-function validateForm(form) {
-    const inputs = form.querySelectorAll(".input1, .textarea1"); // all inputs and textareas
-    let allValid = true;
-
-    inputs.forEach(input => {
-        let value = input.value.trim();
-        let isValid = true;
-
-        // Simple validation rules
-        if (input.type === "email") {
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            isValid = emailRegex.test(value);
-        } else if (input.tagName.toLowerCase() === "textarea") {
-            isValid = value.length >= 10; // message/bio must have at least 10 chars
-        } else {
-            isValid = value.length >= 2; // other text inputs min 2 chars
-        }
-
-        validateInput(input, isValid);
-        if (!isValid) allValid = false;
-    });
-
-    return allValid;
-}
-
-// Attach event listeners to all save buttons
+// Select all save buttons
 document.querySelectorAll(".save-btn").forEach(button => {
     button.addEventListener("click", function(e) {
         e.preventDefault();
-        const form = button.closest("form"); 
+        const form = button.closest("form");
+        const inputs = form.querySelectorAll(".input1, .textarea1");
+        let allValid = true;
 
-        if (validateForm(form)) {
+        inputs.forEach(input => {
+            const errorDiv = input.nextElementSibling; // div.error-msg
+            errorDiv.textContent = ""; // clear previous messages
+            let value = input.value.trim();
+            let valid = true;
+            let message = "";
+
+            if (input.type === "email") {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) {
+                    valid = false;
+                    message = "Please enter a valid email";
+                }
+            } else if (input.tagName.toLowerCase() === "textarea") {
+                if (value.length < 10) {
+                    valid = false;
+                    message = "Please enter at least 10 characters";
+                }
+            } else {
+                if (value.length < 2) {
+                    valid = false;
+                    message = "This field cannot be empty";
+                }
+            }
+
+            if (!valid) {
+                input.style.border = "2px solid red";
+                errorDiv.textContent = message;
+                errorDiv.style.color = "red";
+                allValid = false;
+            } else {
+                input.style.border = "2px solid green";
+            }
+        });
+
+        if (allValid) {
             alert("Changes saved successfully!");
-           
+            form.reset();
+            inputs.forEach(input => input.style.border = "1px solid #ccc");
         } else {
             alert("Please fill all fields correctly.");
         }
     });
 });
+
