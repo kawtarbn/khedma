@@ -67,23 +67,23 @@
        <h2>Post a Job Request</h2>
        <p>Students: Let employers know what kind of jobs you want to apply for</p>
        <div class="post-request">
-         <form action=""  class="request-form">
-             <label for="">Job title / What i'm looking for:</label><br>
-             <input type="text" placeholder="e.g., Looking for part-time tutoring job in Math" required>
+         <form id="request-form" action=""  class="request-form">
+             <label for="request_title">Job title / What i'm looking for:</label><br>
+             <input id="request_title" type="text" placeholder="e.g., Looking for part-time tutoring job in Math" required>
              <br><br>
-             <label for="">Category</label><br>
-             <select id="" name="" required >
+             <label for="request_category">Category</label><br>
+             <select id="request_category" name="" required >
                  <option value="">-- select a category -- </option>
-                 <option value="">Tutoring & education </option>
-                 <option value="">Freelance & degital work</option>
-                 <option value="">Part time & small jobs </option>
-                 <option value="">Babysitting & Household Help</option>
-                 <option value="">Delivery and Errands</option>
+                 <option value="Tutoring & education ">Tutoring & education </option>
+                 <option value="Freelance & degital work">Freelance & degital work</option>
+                 <option value="Part time & small jobs">Part time & small jobs </option>
+                 <option value="Babysitting & Household Help">Babysitting & Household Help</option>
+                 <option value="Delivery and Errands">Delivery and Errands</option>
               </select> 
               <br><br>
 
-              <label for="">Preferred Location </label><br>
-              <select name="" id="" required>
+              <label for="request_city">Preferred Location </label><br>
+              <select name="" id="request_city" required>
                  <option value=""> -- select a city --</option>
                  <option value="Adrar">Adrar</option>
                  <ption value="Chlef">Chlef</option>
@@ -146,18 +146,18 @@
                </select>
                <br><br>
 
-               <label for="">Description</label><br>
-               <textarea name="" id="" rows="6" cols="40" placeholder="Describe your skills , experience , and what you're looking for in detail..."></textarea>
+               <label for="request_description">Description</label><br>
+               <textarea name="request_description" id="request_description" rows="6" cols="40" placeholder="Describe your skills , experience , and what you're looking for in detail..."></textarea>
                <p>Include your qualifications, preferred working hours, and any other relevant information</p>
                <br><br>
                 <div class="pay-availability">
                     <div>
-                        <label for="">Expected Pay (optional)</label><br>
-                        <input type="text" placeholder="e.g., 5000 DZD/hour">     
+                        <label for="request_pay">Expected Pay (optional)</label><br>
+                        <input id="request_pay" type="text" placeholder="e.g., 5000 DZD/hour">     
                     </div>
                     <div>
-                        <label for="">Your Availability</label><br>
-                       <input type="text" placeholder="e.g., Mon-Fri 2PM-6PM" required>
+                        <label for="request_availability">Your Availability</label><br>
+                       <input id="request_availability" type="text" placeholder="e.g., Mon-Fri 2PM-6PM" required>
                     </div>
                 </div>
            </form>
@@ -200,6 +200,7 @@
        
        
     </section>
+    <script src="valid_post_req.js"></script>
      <footer class="footer">
         <div class="items">
             <div class="item1">
