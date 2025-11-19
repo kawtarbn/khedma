@@ -88,61 +88,42 @@
     </div>
   </div>
 
-  <div class="M">
-    <h3>Reviews</h3>
-    <div class="Q">
-      <h3>Fatima.Z⭐(5/5)</h3>
-      <p class="e">08/10/2025</p>
-    </div>
-    <p>Excellent work! Very professional and reliable.</p>
-    <hr>
-
-    <div class="Q">
-      <h3>Mohamed.K⭐(4/5)</h3>
-      <p class="t">05/10/2025</p>
-    </div>
-    <p>Good experience overall. Would recommend.</p>
-    <hr>
-
-    <div class="Q">
-      <h3>Lina.B⭐(4/5)</h3>
-      <p class="e">01/10/2025</p>
-    </div>
-    <p>Great communication and quality service.</p>
-  </div>
-
   <div class="card">
     <h3>Contact Information</h3>
     <p class="email2">ahmed.benali@email.dz</p>
     <div class="wrapper">
-      <a href="#modalbox" class="apply-btn">Apply Now</a>
+      <a href="#" class="apply-btn">Apply Now</a>
     </div>
   </div>
 
-  <div id="modalbox" class="modal">
+  <!-- Modal -->
+  <div id="modalbox" class="modal" style="display:none;">
     <div class="modalcontent">
-        <div class="form-box">
-            <a class="a" href="detail1.html" class="F">&times;</a>
-    <h2 class="h2m">Apply for this Job</h2>
-    <form>
-      <label class="label">Full Name</label><br>
-      <input class="input" type="text" name="fullname"><br>
+      <div class="form-box">
+        <a href="#" class="close-btn">&times;</a>
+        <h2 class="h2m">Apply for this Job</h2>
+        <form id="jobForm">
+          <label>Full Name</label><br>
+          <input type="text" name="fullname" class="input"><br>
+          <div class="error-msg"></div>
 
-      <label class="label">Email</label><br>
-      <input class="input" type="email" name="email"><br>
+          <label>Email</label><br>
+          <input type="email" name="email" class="input"><br>
+          <div class="error-msg"></div>
 
-      <label class="label">Phone Number</label><br>
-      <input class="input" type="text" name="phone"><br>
+          <label>Phone Number</label><br>
+          <input type="text" name="phone" class="input"><br>
+          <div class="error-msg"></div>
 
-      <label class="label">Cover Message</label><br>
-      <textarea class="textarea" name="message" rows="4" placeholder="Tell them why you're a great fit..."></textarea><br>
+          <label>Cover Message</label><br>
+          <textarea name="message" class="textarea" rows="4"></textarea><br>
+          <div class="error-msg"></div>
 
           <button type="submit" class="submit-btn">Submit Application</button>
         </form>
       </div>
     </div>
   </div>
-</div>
 </div>
 <script src="detail1.js"></script>
  <footer class="footer">
