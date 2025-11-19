@@ -80,7 +80,7 @@ body {
 
 .nav1 {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 60vw;
@@ -3081,19 +3081,20 @@ hr {
 /* ================= PROFILE & EDIT PAGE STYLES ================= */
 
 .cardd {
+  justify-content: space-between;
+  position: relative;
+  display: flex;
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
   padding: 40px 50px;
   max-height: 900px;
-  max-width: 1500px;
-  max-width: 100%;
-  margin: 0 auto;
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
 }
 
 
 .profile-header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3478,9 +3479,7 @@ hr {
     gap: 10px;
   }
 
-  .edit-btn {
-    align-self: flex-start;
-  }
+ 
 }
 
 @media (max-width: 600px) {
@@ -3509,7 +3508,6 @@ hr {
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
-  width: 95vw;
   padding: 10px;
   margin: 0px 0px;
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
@@ -3570,16 +3568,21 @@ hr {
   color: #facc15;
   margin-top: 10px;
 }
+.last{
+  position: absolute;
+  right: 0px;
+margin: 10px 10px;
+}
 
 /* Edit button */
 .edit-btn {
+  padding: 10px;
+  width: 100%;
   background-color: #2563eb;
   color: white;
-  padding: 12px 22px;
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
@@ -3722,7 +3725,7 @@ hr {
     font-size: 28px;
   }
 
-  .cardd,
+ 
   .edit-form {
     padding: 20px;
   }
@@ -3749,7 +3752,6 @@ hr {
     align-items: flex-start;
   }
   .stprofile{
-    width: 80vw;
     margin: 5px 20px;
   }
 }
