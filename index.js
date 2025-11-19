@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  /* -------------------------
-     HELPERS
-  ------------------------- */
-
-  // Return existing small for the form (by id if present) or create one (class "form-error")
+  
   function getFormSmall(form, preferId) {
     if (!form) return null;
     if (preferId) {
@@ -20,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     return small;
   }
 
-  // mark input invalid (only styling)
+  
   function setError(selector) {
     const input = document.querySelector(selector);
     if (!input) return;
@@ -28,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input.classList.remove("success");
   }
 
-  // mark input valid (only styling)
+  
   function setSuccess(selector) {
     const input = document.querySelector(selector);
     if (!input) return;
@@ -36,18 +32,16 @@ document.addEventListener("DOMContentLoaded", function() {
     input.classList.remove("error");
   }
 
-  // email validator
+
   function isEmail(email) {
     return /^([a-zA-Z0-9_.\-]+)@([a-zA-Z0-9_.\-]+)\.([a-zA-Z]{2,})$/.test(email);
   }
 
-  /* -------------------------
-     EMPLOYER SIGN-UP
-  ------------------------- */
+ 
   (function() {
     const form = document.querySelector("#employerSignUpForm");
     if (!form) return;
-    // prefer an explicit small id if you placed one in HTML
+   
     const small = getFormSmall(form, "employerSignUpError");
 
     form.addEventListener("submit", function(e) {
@@ -64,14 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
       const companyEl = document.querySelector("#univemp");
       const cityEl = document.querySelector("#cityemp");
 
-      // Full name
+      
       if (!fullName || !fullName.value.trim()) {
         setError("#namemployer");
         messages.push("Full name cannot be blank");
         valid = false;
       } else setSuccess("#namemployer");
 
-      // Email
+      
       const emailVal = emailEl ? emailEl.value.trim() : "";
       if (!emailVal) {
         setError("#emailemployer");
@@ -83,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
         valid = false;
       } else setSuccess("#emailemployer");
 
-      // Password
+      
       const passVal = passEl ? passEl.value : "";
       if (!passVal.trim()) {
         setError("#passemployer");
@@ -95,14 +89,14 @@ document.addEventListener("DOMContentLoaded", function() {
         valid = false;
       } else setSuccess("#passemployer");
 
-      // Company
+      
       if (!companyEl || !companyEl.value.trim()) {
         setError("#univemp");
         messages.push("Company cannot be blank");
         valid = false;
       } else setSuccess("#univemp");
 
-      // City
+      
       if (!cityEl || !cityEl.value) {
         setError("#cityemp");
         messages.push("Please select a city");
@@ -115,18 +109,14 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
 
-      // success
+      
       small.textContent = "Sign-up successful!";
       small.classList.add("success");
-      // (Do not redirect here; leave for future server logic or uncomment below)
-      // localStorage.setItem("role", "employer");
-      // window.location.href = "index.html";
+      
     });
   })();
 
-  /* -------------------------
-     EMPLOYER LOGIN
-  ------------------------- */
+  
   (function() {
     const form = document.querySelector("#employerLoginForm");
     if (!form) return;
@@ -171,15 +161,13 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
 
-      // success -> set role and redirect
+      
       localStorage.setItem("role", "employer");
       window.location.href = "index.html";
     });
   })();
 
-  /* -------------------------
-     STUDENT SIGN-UP
-  ------------------------- */
+ 
   (function() {
     const form = document.getElementById("studentSignUpForm");
     if (!form) return;
@@ -199,14 +187,14 @@ document.addEventListener("DOMContentLoaded", function() {
       const universityEl = document.getElementById("univ");
       const cityEl = document.getElementById("city");
 
-      // Name
+      
       if (!nameEl || !nameEl.value.trim()) {
         setError("#namestudent");
         messages.push("Name cannot be blank");
         valid = false;
       } else setSuccess("#namestudent");
 
-      // Email
+      
       const emailVal = emailEl ? emailEl.value.trim() : "";
       if (!emailVal) {
         setError("#emailstudent");
@@ -218,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
         valid = false;
       } else setSuccess("#emailstudent");
 
-      // Password
+      
       const passVal = passEl ? passEl.value : "";
       if (!passVal.trim()) {
         setError("#passtudent");
@@ -230,14 +218,14 @@ document.addEventListener("DOMContentLoaded", function() {
         valid = false;
       } else setSuccess("#passtudent");
 
-      // University
+    
       if (!universityEl || !universityEl.value.trim()) {
         setError("#univ");
         messages.push("University cannot be blank");
         valid = false;
       } else setSuccess("#univ");
 
-      // City
+      
       if (!cityEl || !cityEl.value) {
         setError("#city");
         messages.push("City must be selected");
@@ -250,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
 
-      // success
+     
       small.textContent = "Sign-up successful!";
       small.classList.add("success");
       localStorage.setItem("role", "student");
@@ -258,9 +246,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   })();
 
-  /* -------------------------
-     STUDENT LOGIN
-  ------------------------- */
+ 
   (function() {
     const form = document.querySelector("#studentLoginForm");
     if (!form) return;
@@ -305,15 +291,13 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
 
-      // success -> set role and redirect
+     
       localStorage.setItem("role", "student");
       window.location.href = "index.html";
     });
   })();
 
-  /* -------------------------
-     HEADER & LOGOUT
-  ------------------------- */
+ 
   const role = localStorage.getItem("role");
   const headerGuest = document.getElementById("header-guest");
   const headerStudent = document.getElementById("header-student");
@@ -339,9 +323,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.location.href = "index.html";
   };
 
-  /* -------------------------
-     HAMBURGER MENU
-  ------------------------- */
+  
   const hamburger = document.querySelectorAll('.hamburger');
   hamburger.forEach(h => {
     const nav = h.nextElementSibling;
@@ -353,4 +335,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-}); // DOMContentLoaded end
+}); 
