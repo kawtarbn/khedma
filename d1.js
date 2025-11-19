@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("modalbox");
     const applyBtn = document.querySelector(".login-btn");
-    const closeBtn = modal.querySelector(".a"); // close button inside modal
-    const form = document.querySelector("#jobForm"); // make sure your form has id="jobForm"
+    const closeBtn = modal.querySelector(".a"); 
+    const form = document.querySelector("#jobForm"); 
 
-    // Open modal
+    
     applyBtn.addEventListener("click", function(e) {
         e.preventDefault();
         modal.style.display = "flex";
         clearForm();
     });
 
-    // Close modal
+  
     closeBtn.addEventListener("click", function(e) {
         e.preventDefault();
         modal.style.display = "none";
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         clearForm();
     });
 
-    // Close modal when clicking outside
+    
     window.addEventListener("click", function(e) {
         if (e.target === modal) {
             modal.style.display = "none";
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Form submit
+    
     form.addEventListener("submit", function(e) {
         e.preventDefault();
         let isValid = true;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Validate individual field
+   
     function validateField(input) {
         const value = input.value.trim();
         const name = input.name;
@@ -71,13 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
             if (value.length < 10) return showError(input, errorDiv, "Message must be at least 10 characters");
         }
 
-        // If valid
+        
         input.style.border = "2px solid green";
         input.style.backgroundColor = "rgba(0,255,0,0.1)";
         return true;
     }
 
-    // Show error message
+   
     function showError(input, div, message) {
         if(div) div.textContent = message;
         if(div) div.style.color = "red";
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
     }
 
-    // Clear all errors
+    
     function clearForm() {
         form.querySelectorAll(".error-msg").forEach(function(div) {
             div.textContent = "";
