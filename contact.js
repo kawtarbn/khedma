@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let valid = true;
 
-        // Validate Name
+        
         if (name.value.trim().length < 3) {
             setError(name, "Name must be at least 3 characters");
             valid = false;
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setSuccess(name);
         }
 
-        // Validate Email
+        
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
             setError(email, "Email is not valid");
             valid = false;
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setSuccess(email);
         }
 
-        // Validate Subject
+        
         if (subject.value === "" || subject.value === "Sselect a subject") {
             setError(subject, "Please select a subject");
             valid = false;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setSuccess(subject);
         }
 
-        // Validate Message
+        
         if (message.value.trim().length < 10) {
             setError(message, "Message must be at least 10 characters");
             valid = false;

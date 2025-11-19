@@ -1,10 +1,10 @@
-// Select DOM elements
+
 const searchInput = document.querySelector(".search");
 const categorySelect = document.querySelector(".cat");
 const citySelect = document.querySelector(".cit");
 const jobCards = document.querySelectorAll(".job-card");
 
-// Function to filter jobs
+
 function filterJobs() {
     const searchText = searchInput.value.toLowerCase();
     const selectedCategory = categorySelect.value.toLowerCase();
@@ -28,12 +28,12 @@ function filterJobs() {
     });
 }
 
-// Event listeners for search, category, and city
+
 searchInput.addEventListener("input", filterJobs);
 categorySelect.addEventListener("change", filterJobs);
 citySelect.addEventListener("change", filterJobs);
 
-// Add a little hover animation using JS
+
 jobCards.forEach(card => {
     card.addEventListener("mouseenter", () => {
         card.style.transform = "translateY(-5px)";
