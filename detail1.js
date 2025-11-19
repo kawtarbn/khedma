@@ -1,168 +1,99 @@
-// basicJobFormMessage.js
-
 document.addEventListener("DOMContentLoaded", function() {
-  var modal = document.getElementById("modalbox");
-  var applyBtn = document.querySelector(".apply-btn");
-  var closeBtn = modal.querySelector(".a");
-  var form = modal.querySelector("form");
+    const modal = document.getElementById("modalbox");
+    const applyBtn = document.querySelector(".apply-btn");
+    const closeBtn = document.querySelector(".close-btn");
+    const form = document.getElementById("jobForm");
 
-  // Open modal
-  applyBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    modal.style.display = "flex";
-    clearBorders();
-    clearMessages();
-  });
-
-  // Close modal
-  closeBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    modal.style.display = "none";
-    form.reset();
-    clearBorders();
-    clearMessages();
-  });
-
-  // Close when clicking outside
-  window.addEventListener("click", function(e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-      form.reset();
-      clearBorders();
-      clearMessages();
-    }
-  });
-
-  // Form submit
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    checkInputs();
-  });
-
-  // Real-time validation on input
-  form.querySelectorAll("input, textarea").forEach(function(input) {
-    input.addEventListener("input", function() {
-      validateField(input);
-    });
-  });
-
-  function checkInputs() {
-    var inputs = form.querySelectorAll("input, textarea");
-    var valid = true;
-
-    inputs.forEach(function(input) {
-      if (!validateField(input)) {
-        valid = false;
-      }
+    // Open modal
+    applyBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        modal.style.display = "flex";
+        clearForm();
     });
 
-    if (valid) {
-      showFormMessage("Application submitted successfully!", "green");
-      console.log({
-        fullname: form.querySelector("input[name='fullname']").value,
-        email: form.querySelector("input[name='email']").value,
-        phone: form.querySelector("input[name='phone']").value,
-        message: form.querySelector("textarea[name='message']").value
-      });
-      form.reset();
-      clearBorders();
-      setTimeout(function() {
+    // Close modal
+    closeBtn.addEventListener("click", function(e) {
+        e.preventDefault();
         modal.style.display = "none";
-        clearMessages();
-      }, 2000);
-    }
-  }
-
-  // Validate a single field
-  function validateField(input) {
-    var value = input.value.trim();
-    var name = input.getAttribute("name");
-    var messageEl = input.nextElementSibling;
-
-    // Remove previous message
-    if (messageEl && messageEl.className === "error-msg") {
-      messageEl.remove();
-    }
-
-    if (name === "fullname") {
-      if (value === "") return setError(input, "Name cannot be blank");
-      return setSuccess(input);
-    }
-
-    if (name === "email") {
-      if (value === "") return setError(input, "Email cannot be blank");
-      if (!validateEmail(value)) return setError(input, "Email is not valid");
-      return setSuccess(input);
-    }
-
-    if (name === "phone") {
-      if (value === "") return setError(input, "Phone cannot be blank");
-      if (!validateAlgerianPhone(value)) return setError(input, "Phone must start with 05, 06, or 07 and have 10 digits");
-      return setSuccess(input);
-    }
-
-    if (name === "message") {
-      if (value === "") return setError(input, "Cover message cannot be blank");
-      return setSuccess(input);
-    }
-
-    return true;
-  }
-
-  function setError(input, message) {
-    input.style.border = "2px solid red";
-    input.style.backgroundColor = "rgba(255,0,0,0.1)";
-    input.style.color = "red";
-
-    var errorMsg = document.createElement("p");
-    errorMsg.className = "error-msg";
-    errorMsg.style.color = "red";
-    errorMsg.style.margin = "5px 0 10px 0";
-    errorMsg.style.fontSize = "14px";
-    errorMsg.textContent = message;
-
-    input.insertAdjacentElement("afterend", errorMsg);
-    return false;
-  }
-
-  function setSuccess(input) {
-    input.style.border = "2px solid green";
-    input.style.backgroundColor = "rgba(0,255,0,0.1)";
-    input.style.color = "green";
-    return true;
-  }
-
-  function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  function validateAlgerianPhone(phone) {
-    return /^0[5-7][0-9]{8}$/.test(phone);
-  }
-
-  function showFormMessage(message, color) {
-    var msg = document.createElement("p");
-    msg.style.color = color;
-    msg.style.fontWeight = "bold";
-    msg.style.marginTop = "10px";
-    msg.textContent = message;
-    form.appendChild(msg);
-    setTimeout(function() {
-      msg.remove();
-    }, 2000);
-  }
-
-  function clearBorders() {
-    form.querySelectorAll("input, textarea").forEach(function(el) {
-      el.style.border = "1px solid #ddd";
-      el.style.backgroundColor = "";
-      el.style.color = "";
+        form.reset();
+        clearForm();
     });
-  }
 
-  function clearMessages() {
-    form.querySelectorAll(".error-msg").forEach(function(el) {
-      el.remove();
+    // Close modal when clicking outside
+    window.addEventListener("click", function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            form.reset();
+            clearForm();
+        }
     });
-  }
+
+    // Form submit
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        let isValid = true;
+        const inputs = form.querySelectorAll("input, textarea");
+
+        inputs.forEach(function(input) {
+            if (!validateField(input)) {
+                isValid = false;
+            }
+        });
+
+        if (isValid) {
+            alert("Application submitted successfully!");
+            form.reset();
+            clearForm();
+            modal.style.display = "none";
+        }
+    });
+
+    // Validate individual field
+    function validateField(input) {
+        const value = input.value.trim();
+        const name = input.name;
+        const errorDiv = input.nextElementSibling;
+        errorDiv.textContent = "";
+        input.style.border = "1px solid #ddd";
+        input.style.backgroundColor = "white";
+
+        if (name === "fullname") {
+            if (value.length < 3) return showError(input, errorDiv, "Name must be at least 3 characters");
+        } else if (name === "email") {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!value) return showError(input, errorDiv, "Email cannot be blank");
+            if (!regex.test(value)) return showError(input, errorDiv, "Email is invalid");
+        } else if (name === "phone") {
+            const regex = /^0[5-7][0-9]{8}$/;
+            if (!value) return showError(input, errorDiv, "Phone cannot be blank");
+            if (!regex.test(value)) return showError(input, errorDiv, "Phone must start with 05,06,07 and have 10 digits");
+        } else if (name === "message") {
+            if (value.length < 10) return showError(input, errorDiv, "Message must be at least 10 characters");
+        }
+
+        // If valid
+        input.style.border = "2px solid green";
+        input.style.backgroundColor = "rgba(0,255,0,0.1)";
+        return true;
+    }
+
+    // Show error message
+    function showError(input, div, message) {
+        div.textContent = message;
+        div.style.color = "red";
+        input.style.border = "2px solid red";
+        input.style.backgroundColor = "rgba(255,0,0,0.1)";
+        return false;
+    }
+
+    // Clear all errors
+    function clearForm() {
+        form.querySelectorAll(".error-msg").forEach(function(div) {
+            div.textContent = "";
+        });
+        form.querySelectorAll("input, textarea").forEach(function(input) {
+            input.style.border = "1px solid #ddd";
+            input.style.backgroundColor = "white";
+        });
+    }
 });
